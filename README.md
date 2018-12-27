@@ -4,7 +4,6 @@
 title: "Statistical inference with the GSS data - Akshay Kotha"
 output: 
   html_document: 
-    keep_md: true
     fig_height: 4
     highlight: pygments
     theme: yeti 
