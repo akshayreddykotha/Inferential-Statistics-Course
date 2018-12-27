@@ -6,11 +6,12 @@ knit: (function(input_file, encoding) {
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 output: 
-  html_document: 
+  html_document:
+    keep_md: true
     fig_height: 4
     highlight: pygments
     theme: yeti 
-    keep_md: true
+    
 ---
 
 ## Setup
