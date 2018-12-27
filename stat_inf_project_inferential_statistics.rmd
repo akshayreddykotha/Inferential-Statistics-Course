@@ -5,6 +5,7 @@ output:
     fig_height: 4
     highlight: pygments
     theme: yeti 
+    keep_md: true
 ---
 
 ## Setup
