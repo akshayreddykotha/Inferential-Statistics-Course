@@ -17,7 +17,8 @@ output:
 
 ### Load packages
 
-```{r load-packages, message = FALSE}
+
+```r
 library(ggplot2)
 library(dplyr)
 library(statsr)
@@ -26,7 +27,8 @@ library(vcd)
 
 ### Load data
 
-```{r load-data}
+
+```r
 load("gss.Rdata")
 ```
 
@@ -56,21 +58,23 @@ The association if it exists helps us understand to further engineer the variabl
 
 ## Part 3: Exploratory data analysis
 
-```{r}
+
+```r
 #to check the variable names
 #str(gss)
 ```
 
-```{r}
+
+```r
 #filtering out null values
 conting_sb <- gss %>%
   filter(!is.na(natrace), !is.na(race))
 
 #segmented bar plot
 ggplot(conting_sb, aes(x = race)) + geom_bar(aes(fill = natrace), position = 'fill') + labs(x = "race", y = "proportion of natrace response")
-
-
 ```
+
+![](C:/Users/Akshay/Documents/GitHub/inferential-statistics/docs/index_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 **Narrative**: 
 
@@ -86,10 +90,19 @@ H0: There is no association between the categorical variables `race` and `natrac
 HA: There is a relationship between the categorical variables `race` and `natrace`.
 
 
-```{r}
+
+```r
 #creating a contingency table
 ct <- table(gss$race, gss$natrace)
 ct
+```
+
+```
+##        
+##         Too Little About Right Too Much
+##   White       6532       12447     5884
+##   Black       3470         772       78
+##   Other        456         525      145
 ```
 **Conditions**:
 
@@ -102,10 +115,13 @@ ct
 ***Sample size***:
 
 Each particular cell has greater than or equal to 5 cases as per the contingency table.
-```{r}
+
+```r
 cont <- as.table(as.matrix(ct))
 mosaicplot(cont, shade = TRUE, las=2, main = "Mosaic Plot between race and natrace")
 ```
+
+![](C:/Users/Akshay/Documents/GitHub/inferential-statistics/docs/index_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 *Higher standardized residuals means higher frequency of cases indicated by blue color boxes. Majority of whites are categorized under 'About Right' or 'Too Much' category while majortiy of blacks are categorized under 'Too Little'*
 
@@ -113,16 +129,34 @@ mosaicplot(cont, shade = TRUE, las=2, main = "Mosaic Plot between race and natra
 
 We will be using chi-square test of independence to find out the relationship between these two categorical variables. Both the variables have more than 2 categorical levels and the conditions for the test of independence (TOI) are satisfied.
 
-```{r}
+
+```r
 # Calculating chi-square statistic and the corresponding p-value
 chisq_race_natrace <- chisq.test(ct)
 chisq_race_natrace
 ```
 
+```
+## 
+## 	Pearson's Chi-squared test
+## 
+## data:  ct
+## X-squared = 4873.7, df = 4, p-value < 2.2e-16
+```
 
-```{r}
+
+
+```r
 # expected counts in each cell of the contingency table
 round(chisq_race_natrace$expected,2)
+```
+
+```
+##        
+##         Too Little About Right Too Much
+##   White    8578.88    11274.44  5009.68
+##   Black    1490.60     1958.96   870.44
+##   Other     388.52      510.60   226.88
 ```
 **Results**:
 
