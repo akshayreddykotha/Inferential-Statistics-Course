@@ -1,7 +1,0 @@
----
-
-title: "About this learning"
-
----
-
-More about this learnings.

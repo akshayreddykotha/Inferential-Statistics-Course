@@ -1,6 +1,0 @@
----
-title: "Inferential Statistics"
-output: html_document
-runtime: shiny
----
-Hello, viewers!
