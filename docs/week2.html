@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>2 Week 2 | Inferential Statistics Course Activity</title>
+  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="2 Week 2 | Inferential Statistics Course Activity" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  <meta name="github-repo" content="akshaykumarreddy/stat-inference-proj" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Week 2 | Inferential Statistics Course Activity" />
+  
+  <meta name="twitter:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  
+
+<meta name="author" content="Akshay Kotha">
+
+
+<meta name="date" content="2018-12-29">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week1.html">
+<link rel="next" href="week3.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inferential Statistics Course Activity</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#getting-started"><i class="fa fa-check"></i><b>1.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="week1.html"><a href="week1.html#load-packages"><i class="fa fa-check"></i><b>1.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="1.1.2" data-path="week1.html"><a href="week1.html#the-data"><i class="fa fa-check"></i><b>1.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#the-unknown-sampling-distribution"><i class="fa fa-check"></i><b>1.2</b> The unknown sampling distribution</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#interlude-sampling-distributions"><i class="fa fa-check"></i><b>1.3</b> Interlude: Sampling distributions</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#sample-size-and-the-sampling-distribution"><i class="fa fa-check"></i><b>1.4</b> Sample size and the sampling distribution</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#getting-started-1"><i class="fa fa-check"></i><b>2.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#load-packages-1"><i class="fa fa-check"></i><b>2.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="2.1.2" data-path="week2.html"><a href="week2.html#the-data-1"><i class="fa fa-check"></i><b>2.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#confidence-intervals"><i class="fa fa-check"></i><b>2.2</b> Confidence intervals</a></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#confidence-levels"><i class="fa fa-check"></i><b>2.3</b> Confidence levels</a></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#how-set.seed-works---testing"><i class="fa fa-check"></i><b>2.4</b> How set.seed() works - testing?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#getting-started-2"><i class="fa fa-check"></i><b>3.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#load-packages-2"><i class="fa fa-check"></i><b>3.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="3.1.2" data-path="week3.html"><a href="week3.html#the-data-2"><i class="fa fa-check"></i><b>3.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#exploratory-data-analysis"><i class="fa fa-check"></i><b>3.2</b> Exploratory data analysis</a></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#inference"><i class="fa fa-check"></i><b>3.3</b> Inference</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#getting-started-3"><i class="fa fa-check"></i><b>4.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#load-packages-3"><i class="fa fa-check"></i><b>4.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="4.1.2" data-path="week4.html"><a href="week4.html#the-survey"><i class="fa fa-check"></i><b>4.1.2</b> The survey</a></li>
+<li class="chapter" data-level="4.1.3" data-path="week4.html"><a href="week4.html#the-data-3"><i class="fa fa-check"></i><b>4.1.3</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#inference-on-proportions"><i class="fa fa-check"></i><b>4.2</b> Inference on proportions</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#how-does-the-proportion-affect-the-margin-of-error"><i class="fa fa-check"></i><b>4.3</b> How does the proportion affect the margin of error?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#setup"><i class="fa fa-check"></i><b>5.1</b> Setup</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#load-packages-4"><i class="fa fa-check"></i><b>5.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="5.1.2" data-path="week5.html"><a href="week5.html#load-data"><i class="fa fa-check"></i><b>5.1.2</b> Load data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#part-1-data"><i class="fa fa-check"></i><b>5.2</b> Part 1: Data</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#part-2-research-question"><i class="fa fa-check"></i><b>5.3</b> Part 2: Research question</a></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#part-3-exploratory-data-analysis"><i class="fa fa-check"></i><b>5.4</b> Part 3: Exploratory data analysis</a></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#part-4-inference"><i class="fa fa-check"></i><b>5.5</b> Part 4: Inference</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Inferential Statistics Course Activity</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week2" class="section level1">
+<h1><span class="header-section-number">2</span> Week 2</h1>
+<p>Week 2 covers calculating confidence intervals. Below is the activity.</p>
+<div id="instructions">
+<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera platform.</p>
+</div>
+<p>If you have access to data on an entire population, say the size of every house in Ames, Iowa, it’s straight forward to answer questions like, “How big is the typical house in Ames?” and “How much variation is there in sizes of houses?”. If you have access to only a sample of the population, as is often the case, the task becomes more complicated. What is your best guess for the typical size if you only know the sizes of several dozen houses? This sort of situation requires that you use your sample to make inference on what your population looks like.</p>
+<div id="boxedtext">
+<p><strong>Setting a seed:</strong> We will take some random samples and calculate confidence based on these samples in this lab, which means you should set a seed on top of your lab. If this concept is new to you, review the previous lab and ask your TA.</p>
+<p>Setting a seed will cause R to sample the same sample each time you knit your document. This will make sure your results don’t change each time you knit, and it will also ensure reproducibility of your work (by setting the same seed it will be possible to reproduce your results). You can set a seed like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">19122018</span>)                 <span class="co"># my seed</span></code></pre></div>
+<p>The number above is completely arbitraty. If you need inspiration, you can use your ID, birthday, or just a random string of numbers. The important thing is that you use each seed only once. You only need to do this once in your R Markdown document, but make sure it comes before sampling.</p>
+</div>
+<div id="getting-started-1" class="section level2">
+<h2><span class="header-section-number">2.1</span> Getting Started</h2>
+<div id="load-packages-1" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Load packages</h3>
+<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it using the <code>ggplot2</code> package for data visualization. The data can be found in the companion package for this course, <code>statsr</code>.</p>
+<p>Let’s load the packages.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(statsr)
+<span class="kw">library</span>(dplyr)
+<span class="kw">library</span>(ggplot2)</code></pre></div>
+</div>
+<div id="the-data-1" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> The data</h3>
+<p>We consider real estate data from the city of Ames, Iowa. This is the same dataset used in the previous lab. The details of every real estate transaction in Ames is recorded by the City Assessor’s office. Our particular focus for this lab will be all residential home sales in Ames between 2006 and 2010. This collection represents our population of interest. In this lab we would like to learn about these home sales by taking smaller samples from the full population. Let’s load the data.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(ames)</code></pre></div>
+<p>In this lab we’ll start with a simple random sample of size 60 from the population. Specifically, this is a simple random sample of size 60. Note that the data set has information on many housing variables, but for the first portion of the lab we’ll focus on the size of the house, represented by the variable <code>area</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="dv">60</span>
+samp &lt;-<span class="st"> </span><span class="kw">sample_n</span>(ames, n)</code></pre></div>
+<div id="exercise">
+<p><strong>Exercise</strong>: Describe the distribution of homes in your sample. What would you say is the “typical” size within your sample? Also state precisely what you interpreted “typical” to mean.</p>
+</div>
+<div id="answer1">
+<p><strong>Answer</strong>: Typical size between 1000 and 1500 as it seems to be a bi-modal distribution.‘Typical’ meaning size which is more frequent.</p>
+</div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Knit</span>
+<span class="kw">ggplot</span>(samp, <span class="kw">aes</span>(<span class="dt">x =</span> area)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">320</span>)</code></pre></div>
+<p><img src="02_confidence_intervals_Coursera_files/figure-html/describe-sample-1.png" width="672" /></p>
+<ol style="list-style-type: decimal">
+<li>True or False: My distribution should be similar to others’ distributions who also collect random samples from this population, but it is likely not exactly the same since it’s a random sample.
+<ol>
+<li>
+True.
+</li>
+<li>
+False.
+</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="confidence-intervals" class="section level2">
+<h2><span class="header-section-number">2.2</span> Confidence intervals</h2>
+<p>Return for a moment to the question that first motivated this lab: based on this sample, what can we infer about the population? Based only on this single sample, the best estimate of the average living area of houses sold in Ames would be the sample mean, usually denoted as <span class="math inline">\(\bar{x}\)</span> (here we’re calling it <code>x_bar</code>). That serves as a good <strong>point estimate</strong> but it would be useful to also communicate how uncertain we are of that estimate. This uncertainty can be quantified using a <strong>confidence interval</strong>.</p>
+<p>A confidence interval for a population mean is of the following form <span class="math display">\[ \bar{x} \pm z^\star \frac{s}{\sqrt{n}} \]</span></p>
+<p>You should by now be comfortable with calculating the mean and standard deviation of a sample in R. And we know that the sample size is 60. So the only remaining building block is finding the appropriate critical value for a given confidence level. We can use the <code>qnorm</code> function for this task, which will give the critical value associated with a given percentile under the normal distribution. Remember that confidence levels and percentiles are not equivalent. For example, a 95% confidence level refers to the middle 95% of the distribution, and the critical value associated with this area will correspond to the 97.5th percentile.</p>
+<p>We can find the critical value for a 95% confidence interal using</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">z_star_<span class="dv">95</span> &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)
+z_star_<span class="dv">95</span></code></pre></div>
+<pre><code>## [1] 1.959964</code></pre>
+<p>which is roughly equal to the value critical value 1.96 that you’re likely familiar with by now.</p>
+<p>Let’s finally calculate the confidence interval:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">samp <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(area) <span class="op">-</span><span class="st"> </span>z_star_<span class="dv">95</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)),
+            <span class="dt">upper =</span> <span class="kw">mean</span>(area) <span class="op">+</span><span class="st"> </span>z_star_<span class="dv">95</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)))</code></pre></div>
+<pre><code>## # A tibble: 1 x 2
+##   lower upper
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1 1403. 1631.</code></pre>
+<p>To recap: even though we don’t know what the full population looks like, we’re 95% confident that the true average size of houses in Ames lies between the values <em>lower</em> and <em>upper</em>. There are a few conditions that must be met for this interval to be valid.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>For the confidence interval to be valid, the sample mean must be normally distributed and have standard error <span class="math inline">\(s / \sqrt{n}\)</span>. Which of the following is not a condition needed for this to be true?
+<ol>
+<li>
+The sample is random.
+</li>
+<li>
+The sample size, 60, is less than 10% of all houses.
+</li>
+<li>
+The sample distribution must be nearly normal.
+</li>
+</ol></li>
+</ol>
+</div>
+<div id="confidence-levels" class="section level2">
+<h2><span class="header-section-number">2.3</span> Confidence levels</h2>
+<ol start="3" style="list-style-type: decimal">
+<li>What does “95% confidence” mean?
+<ol>
+<li>
+95% of the time the true average area of houses in Ames, Iowa, will be in this interval.
+</li>
+<li>
+95% of random samples of size 60 will yield confidence intervals that contain the true average area of houses in Ames, Iowa.
+</li>
+<li>
+95% of the houses in Ames have an area in this interval.
+</li>
+<li>
+95% confident that the sample mean is in this interval.
+</li>
+</ol></li>
+</ol>
+<p>In this case we have the rare luxury of knowing the true population mean since we have data on the entire population. Let’s calculate this value so that we can determine if our confidence intervals actually capture it. We’ll store it in a data frame called <code>params</code> (short for population parameters), and name it <code>mu</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">params &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div id="exercise">
+<p><strong>Exercise</strong>: Does your confidence interval capture the true average size of houses in Ames?</p>
+</div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Knit</span>
+<span class="co"># Yes, the true mean is contained within the confidence interval.</span></code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>What proportion of 95% confidence intervals would you expect to capture the true population mean?
+<ol>
+<li>
+1%
+</li>
+<li>
+5%
+</li>
+<li>
+95%
+</li>
+<li>
+99%
+</li>
+</ol></li>
+</ol>
+<p>Using R, we’re going to collect many samples to learn more about how sample means and confidence intervals vary from one sample to another.</p>
+<p>Here is the rough outline:</p>
+<ul>
+<li>Obtain a random sample.</li>
+<li>Calculate the sample’s mean and standard deviation, and use these to calculate and store the lower and upper bounds of the confidence intervals.</li>
+<li>Repeat these steps 50 times.</li>
+</ul>
+<p>We can accomplish this using the <code>rep_sample_n</code> function. The following lines of code takes 50 random samples of size <code>n</code> from population (and remember we defined <span class="math inline">\(n = 60\)</span> earlier), and computes the upper and lower bounds of the confidence intervals based on these samples.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">19122018</span>);
+ci &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
+<span class="st">        </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> n, <span class="dt">reps =</span> <span class="dv">50</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
+<span class="st">        </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(area) <span class="op">-</span><span class="st"> </span>z_star_<span class="dv">95</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)),
+                  <span class="dt">upper =</span> <span class="kw">mean</span>(area) <span class="op">+</span><span class="st"> </span>z_star_<span class="dv">95</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)), <span class="dt">samplemeans.95 =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<p>Let’s view the first five intervals:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#set.seed(19122018);</span>
+ci <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">slice</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</code></pre></div>
+<pre><code>## # A tibble: 5 x 4
+##   replicate lower upper samplemeans.95
+##       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;
+## 1         1 1382. 1608.          1495.
+## 2         2 1341. 1605.          1473.
+## 3         3 1221. 1439.          1330.
+## 4         4 1417. 1682.          1549.
+## 5         5 1300. 1574.          1437.</code></pre>
+<p>Next we’ll create a plot similar to Figure 4.8 on page 175 of <a href="https://www.openintro.org/os">OpenIntro Statistics, 3rd Edition</a>. First step will be to create a new variable in the <code>ci</code> data frame that indicates whether the interval does or does not capture the true population mean. Note that capturing this value would mean the lower bound of the confidence interval is below the value and upper bound of the confidence interval is above the value. Remember that we create new variables using the <code>mutate</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#set.seed(19122018)</span>
+ci &lt;-<span class="st"> </span>ci <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">capture_mu =</span> <span class="kw">ifelse</span>(lower <span class="op">&lt;</span><span class="st"> </span>params<span class="op">$</span>mu <span class="op">&amp;</span><span class="st"> </span>upper <span class="op">&gt;</span><span class="st"> </span>params<span class="op">$</span>mu, <span class="st">&quot;yes&quot;</span>, <span class="st">&quot;no&quot;</span>))</code></pre></div>
+<p>The <code>ifelse</code> function is new. It takes three arguments: first is a logical statement, second is the value we want if the logical statement yields a true result, and the third is the value we want if the logical statement yields a false result.</p>
+<p>We now have all the information we need to create the plot, but we need to re-organize our data a bit for easy plotting. Specifically, we need to organize the data in a new data frame where each row represents one bound, as opposed to one interval. So this</p>
+<pre><code>     lower    upper capture_mu
+1 1350.540 1544.360        yes
+2 1333.441 1584.425        yes
+3 1412.133 1663.801        yes
+...</code></pre>
+<p>should instead look like</p>
+<pre><code>  ci_id ci_bounds capture_mu
+1     1  1350.540        yes
+2     2  1333.441        yes
+3     3  1412.133        yes
+4     1  1544.360        yes
+5     2  1584.425        yes
+6     3  1663.801        yes
+...</code></pre>
+<p>We can accomplish this using the following:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">19122018</span>)
+ci_data &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">ci_id =</span> <span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">50</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">50</span>),
+                      <span class="dt">ci_bounds =</span> <span class="kw">c</span>(ci<span class="op">$</span>lower, ci<span class="op">$</span>upper),
+                      <span class="dt">capture_mu =</span> <span class="kw">c</span>(ci<span class="op">$</span>capture_mu, ci<span class="op">$</span>capture_mu))</code></pre></div>
+<p>And finally we can create the plot using the following:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#set.seed(19122018)</span>
+<span class="kw">ggplot</span>(<span class="dt">data =</span> ci_data, <span class="kw">aes</span>(<span class="dt">x =</span> ci_bounds, <span class="dt">y =</span> ci_id, 
+                           <span class="dt">group =</span> ci_id, <span class="dt">color =</span> capture_mu)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">2</span>) <span class="op">+</span><span class="st">  </span><span class="co"># add points at the ends, size = 2</span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span><span class="st">           </span><span class="co"># connect with lines</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> params<span class="op">$</span>mu, <span class="dt">color =</span> <span class="st">&quot;darkgray&quot;</span>) <span class="co"># draw vertical line</span></code></pre></div>
+<p><img src="02_confidence_intervals_Coursera_files/figure-html/plot-ci-1.png" width="672" /></p>
+</div>
+<div id="how-set.seed-works---testing" class="section level2">
+<h2><span class="header-section-number">2.4</span> How set.seed() works - testing?</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">111112</span>)
+ci.<span class="dv">95</span> &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
+<span class="st">   </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> n, <span class="dt">reps =</span> <span class="dv">50</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">samplemeans.95 =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(ci.<span class="dv">95</span>)</code></pre></div>
+<pre><code>## # A tibble: 6 x 2
+##   replicate samplemeans.95
+##       &lt;int&gt;          &lt;dbl&gt;
+## 1         1          1526.
+## 2         2          1474.
+## 3         3          1492.
+## 4         4          1473.
+## 5         5          1446.
+## 6         6          1483.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">111112</span>)
+ci.<span class="dv">99</span> &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> n, <span class="dt">reps =</span> <span class="dv">50</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">samplemeans.99 =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(ci.<span class="dv">99</span>)</code></pre></div>
+<pre><code>## # A tibble: 6 x 2
+##   replicate samplemeans.99
+##       &lt;int&gt;          &lt;dbl&gt;
+## 1         1          1526.
+## 2         2          1474.
+## 3         3          1492.
+## 4         4          1473.
+## 5         5          1446.
+## 6         6          1483.</code></pre>
+<div id="exercise">
+<p><strong>Exercise</strong>: What proportion of your confidence intervals include the true population mean? Is this proportion exactly equal to the confidence level? If not, explain why.</p>
+<p><strong>Answer</strong>: It is almost all of the CIs = 98% include the true population mean except 1 sample. The proportion is not exactly equal to the confidence level because the confidence interval only provides a plausible range within which the mean is captured. BY definition, we are 95% confident, but results might vary based on how the samples are randonly selected. This is an overestimation of the 95% CI sampling.</p>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>What is the appropriate critical value for a 99% confidence level?
+<ol>
+<li>
+0.01
+</li>
+<li>
+0.99
+</li>
+<li>
+1.96
+</li>
+<li>
+2.33
+</li>
+<li>
+2.58
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Question 5 here, and Knit</span>
+<span class="kw">set.seed</span>(<span class="dv">19122018</span>)
+z_star_<span class="dv">99</span> &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.995</span>) 
+z_star_<span class="dv">99</span></code></pre></div>
+<pre><code>## [1] 2.575829</code></pre>
+<div id="exercise">
+<p><strong>Exercise</strong>: Calculate 50 confidence intervals at the 99% confidence level. You do not need to obtain new samples, simply calculate new intervals based on the 95% confidence interval endpoints you had already collected. Plot all intervals and calculate the proportion of intervals that include the true population mean.</p>
+</div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Knit</span>
+
+<span class="kw">set.seed</span>(<span class="dv">19122018</span>)
+<span class="co">#samples for 99% confidence interval</span>
+ci_<span class="dv">99</span> &lt;-<span class="st"> </span>ames  <span class="op">%&gt;%</span>
+<span class="st">        </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> n ,<span class="dt">reps =</span> <span class="dv">50</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
+<span class="st">        </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(area) <span class="op">-</span><span class="st"> </span>z_star_<span class="dv">99</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)),
+                  <span class="dt">upper =</span> <span class="kw">mean</span>(area) <span class="op">+</span><span class="st"> </span>z_star_<span class="dv">99</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">sd</span>(area) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(n)), <span class="dt">samplemeans.99 =</span> <span class="kw">mean</span>(area))
+<span class="co">#assignment of capture</span>
+ci_<span class="dv">99</span> &lt;-<span class="st"> </span>ci_<span class="dv">99</span> <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">capture_mu_99 =</span> <span class="kw">ifelse</span>(lower <span class="op">&lt;</span><span class="st"> </span>params<span class="op">$</span>mu <span class="op">&amp;</span><span class="st"> </span>upper <span class="op">&gt;</span><span class="st"> </span>params<span class="op">$</span>mu, <span class="st">&quot;yes&quot;</span>, <span class="st">&quot;no&quot;</span>))
+
+<span class="co">#datagrame for plot</span>
+ci_data_<span class="dv">99</span> &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">ci_id_99 =</span> <span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">50</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">50</span>),
+                      <span class="dt">ci_bounds_99 =</span> <span class="kw">c</span>(ci_<span class="dv">99</span><span class="op">$</span>lower, ci_<span class="dv">99</span><span class="op">$</span>upper),
+                      <span class="dt">capture_mu_99 =</span> <span class="kw">c</span>(ci_<span class="dv">99</span><span class="op">$</span>capture_mu_<span class="dv">99</span>, ci_<span class="dv">99</span><span class="op">$</span>capture_mu_<span class="dv">99</span>))
+<span class="co">#plot</span>
+<span class="kw">ggplot</span>(<span class="dt">data =</span> ci_data_<span class="dv">99</span>, <span class="kw">aes</span>(<span class="dt">x =</span> ci_bounds_<span class="dv">99</span>, <span class="dt">y =</span> ci_id_<span class="dv">99</span>, 
+                           <span class="dt">group =</span> ci_id_<span class="dv">99</span>, <span class="dt">color =</span> capture_mu_<span class="dv">99</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">2</span>) <span class="op">+</span><span class="st">  </span><span class="co"># add points at the ends, size = 2</span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span><span class="st">           </span><span class="co"># connect with lines</span>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> params<span class="op">$</span>mu, <span class="dt">color =</span> <span class="st">&quot;darkblue&quot;</span>) <span class="co"># draw vertical line</span></code></pre></div>
+<p><img src="02_confidence_intervals_Coursera_files/figure-html/plot-99-perc-cis-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"> ci_<span class="dv">99</span> <span class="op">%&gt;%</span>
+<span class="st">   </span><span class="kw">slice</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</code></pre></div>
+<pre><code>## # A tibble: 5 x 5
+##   replicate lower upper samplemeans.99 capture_mu_99
+##       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;        
+## 1         1 1347. 1644.          1495. yes          
+## 2         2 1300. 1647.          1473. yes          
+## 3         3 1187. 1473.          1330. no           
+## 4         4 1375. 1723.          1549. yes          
+## 5         5 1257. 1617.          1437. yes</code></pre>
+<p>```</p>
+<ol start="6" style="list-style-type: decimal">
+<li>We would expect 99% of the intervals to contain the true population mean.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+</ol>
+<div id="license">
+<p>This is a product of OpenIntro that is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike 3.0 Unported</a>. This lab was written for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02_confidence_intervals_Coursera.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["inferential_statistics.pdf", "inferential_statistics.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

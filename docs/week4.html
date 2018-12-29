@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>4 Week 4 | Inferential Statistics Course Activity</title>
+  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="4 Week 4 | Inferential Statistics Course Activity" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  <meta name="github-repo" content="akshaykumarreddy/stat-inference-proj" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Week 4 | Inferential Statistics Course Activity" />
+  
+  <meta name="twitter:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  
+
+<meta name="author" content="Akshay Kotha">
+
+
+<meta name="date" content="2018-12-29">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week3.html">
+<link rel="next" href="week5.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inferential Statistics Course Activity</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#getting-started"><i class="fa fa-check"></i><b>1.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="week1.html"><a href="week1.html#load-packages"><i class="fa fa-check"></i><b>1.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="1.1.2" data-path="week1.html"><a href="week1.html#the-data"><i class="fa fa-check"></i><b>1.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#the-unknown-sampling-distribution"><i class="fa fa-check"></i><b>1.2</b> The unknown sampling distribution</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#interlude-sampling-distributions"><i class="fa fa-check"></i><b>1.3</b> Interlude: Sampling distributions</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#sample-size-and-the-sampling-distribution"><i class="fa fa-check"></i><b>1.4</b> Sample size and the sampling distribution</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#getting-started-1"><i class="fa fa-check"></i><b>2.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#load-packages-1"><i class="fa fa-check"></i><b>2.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="2.1.2" data-path="week2.html"><a href="week2.html#the-data-1"><i class="fa fa-check"></i><b>2.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#confidence-intervals"><i class="fa fa-check"></i><b>2.2</b> Confidence intervals</a></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#confidence-levels"><i class="fa fa-check"></i><b>2.3</b> Confidence levels</a></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#how-set.seed-works---testing"><i class="fa fa-check"></i><b>2.4</b> How set.seed() works - testing?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#getting-started-2"><i class="fa fa-check"></i><b>3.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#load-packages-2"><i class="fa fa-check"></i><b>3.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="3.1.2" data-path="week3.html"><a href="week3.html#the-data-2"><i class="fa fa-check"></i><b>3.1.2</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#exploratory-data-analysis"><i class="fa fa-check"></i><b>3.2</b> Exploratory data analysis</a></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#inference"><i class="fa fa-check"></i><b>3.3</b> Inference</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#getting-started-3"><i class="fa fa-check"></i><b>4.1</b> Getting Started</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#load-packages-3"><i class="fa fa-check"></i><b>4.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="4.1.2" data-path="week4.html"><a href="week4.html#the-survey"><i class="fa fa-check"></i><b>4.1.2</b> The survey</a></li>
+<li class="chapter" data-level="4.1.3" data-path="week4.html"><a href="week4.html#the-data-3"><i class="fa fa-check"></i><b>4.1.3</b> The data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#inference-on-proportions"><i class="fa fa-check"></i><b>4.2</b> Inference on proportions</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#how-does-the-proportion-affect-the-margin-of-error"><i class="fa fa-check"></i><b>4.3</b> How does the proportion affect the margin of error?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#setup"><i class="fa fa-check"></i><b>5.1</b> Setup</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#load-packages-4"><i class="fa fa-check"></i><b>5.1.1</b> Load packages</a></li>
+<li class="chapter" data-level="5.1.2" data-path="week5.html"><a href="week5.html#load-data"><i class="fa fa-check"></i><b>5.1.2</b> Load data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#part-1-data"><i class="fa fa-check"></i><b>5.2</b> Part 1: Data</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#part-2-research-question"><i class="fa fa-check"></i><b>5.3</b> Part 2: Research question</a></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#part-3-exploratory-data-analysis"><i class="fa fa-check"></i><b>5.4</b> Part 3: Exploratory data analysis</a></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#part-4-inference"><i class="fa fa-check"></i><b>5.5</b> Part 4: Inference</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Inferential Statistics Course Activity</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week4" class="section level1">
+<h1><span class="header-section-number">4</span> Week 4</h1>
+<p>Week 4 is about making inference from categorical data.</p>
+<div id="instructions">
+<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera platform.</p>
+</div>
+<p>In August of 2012, news outlets ranging from the <a href="http://www.washingtonpost.com/national/on-faith/poll-shows-atheism-on-the-rise-in-the-us/2012/08/13/90020fd6-e57d-11e1-9739-eef99c5fb285_story.html">Washington Post</a> to the <a href="http://www.huffingtonpost.com/2012/08/14/atheism-rise-religiosity-decline-in-america_n_1777031.html">Huffington Post</a> ran a story about the rise of atheism in America. The source for the story was a poll that asked people, “Irrespective of whether you attend a place of worship or not, would you say you are a religious person, not a religious person or a convinced atheist?” This type of question, which asks people to classify themselves in one way or another, is common in polling and generates categorical data. In this lab we take a look at the atheism survey and explore what’s at play when making inference about population proportions using categorical data.</p>
+<div id="getting-started-3" class="section level2">
+<h2><span class="header-section-number">4.1</span> Getting Started</h2>
+<div id="load-packages-3" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Load packages</h3>
+<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it using the <code>ggplot2</code> package for data visualization. The data can be found in the companion package for this course, <code>statsr</code>.</p>
+<p>Let’s load the packages.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(statsr)
+<span class="kw">library</span>(dplyr)
+<span class="kw">library</span>(ggplot2)</code></pre></div>
+</div>
+<div id="the-survey" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> The survey</h3>
+<p>The press release for the poll, conducted by WIN-Gallup International, can be accessed <a href="https://www.scribd.com/document/136318147/Win-gallup-International-Global-Index-of-Religiosity-and-Atheism-2012">here</a>.</p>
+<p>Take a moment to review the report then address the following questions.</p>
+<ol style="list-style-type: decimal">
+<li>How many people were interviewed for this survey?
+<ol>
+<li>
+A poll conducted by WIN-Gallup International surveyed 51,000 people from 57 countries.
+</li>
+<li>
+A poll conducted by WIN-Gallup International surveyed 52,000 people from 57 countries.
+</li>
+<li>
+A poll conducted by WIN-Gallup International surveyed 51,917 people from 57 countries.
+</li>
+<li>
+A poll conducted by WIN-Gallup International surveyed 51,927 people from 57 countries.
+</li>
+</ol></li>
+<li>Which of the following methods were used to gather information?
+<ol>
+<li>
+Face to face
+</li>
+<li>
+Telephone
+</li>
+<li>
+Internet
+</li>
+<li>
+All of the above
+</li>
+</ol></li>
+<li>True / False: In the first paragraph, several key findings are reported. These percentages appear to be <strong>sample statistics</strong>.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+<li>True / False:The title of the report is “Global Index of Religiosity and Atheism”. To generalize the report’s findings to the global human population, We must assume that the sample was a random sample from the entire population in order to be able to generalize the results to the global human population. This seems to be a reasonable assumption.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+</ol>
+</div>
+<div id="the-data-3" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> The data</h3>
+<p>Turn your attention to Table 6 (pages 15 and 16), which reports the sample size and response percentages for all 57 countries. While this is a useful format to summarize the data, we will base our analysis on the original data set of individual responses to the survey. Load this data set into R with the following command.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(atheism)</code></pre></div>
+<ol start="5" style="list-style-type: decimal">
+<li>What does each row of Table 6 correspond to?
+<ol>
+<li>
+Countries
+</li>
+<li>
+Individual Persons
+</li>
+<li>
+Religions
+</li>
+</ol></li>
+<li>What does each row of <code>atheism</code> correspond to?
+<ol>
+<li>
+Countries
+</li>
+<li>
+Individual Persons
+</li>
+<li>
+Religions
+</li>
+</ol></li>
+</ol>
+<p>To investigate the link between these two ways of organizing this data, take a look at the estimated proportion of atheists in the United States. Towards the bottom of Table 6, we see that this is 5%. We should be able to come to the same number using the <code>atheism</code> data.</p>
+<p>Create a new dataframe called <code>us12</code> that contains only the rows in <code>atheism</code> associated with respondents to the 2012 survey from the United States:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">us12 &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span> , atheism<span class="op">$</span>year <span class="op">==</span><span class="st"> &quot;2012&quot;</span>)</code></pre></div>
+<ol start="7" style="list-style-type: decimal">
+<li>Next, calculate the proportion of atheist responses in the United States in 2012, i.e. in <code>us12</code>. True / False: This percentage agrees with the percentage in Table~6.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 7 here, and Knit</span>
+us12 <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">group_by</span>(response) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="co"># Show percentage of each level within the categorical variable</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">perc =</span> n<span class="op">/</span><span class="kw">sum</span>(n)) </code></pre></div>
+<pre><code>## # A tibble: 2 x 3
+##   response        n   perc
+##   &lt;fct&gt;       &lt;int&gt;  &lt;dbl&gt;
+## 1 atheist        50 0.0499
+## 2 non-atheist   952 0.950</code></pre>
+</div>
+</div>
+<div id="inference-on-proportions" class="section level2">
+<h2><span class="header-section-number">4.2</span> Inference on proportions</h2>
+<p>As was hinted earlier, Table 6 provides <strong>sample statistics</strong>, that is, calculations made from the sample of 51,927 people. What we’d like, though, is insight into the population <strong>population parameters</strong>. You answer the question, “What proportion of people in your sample reported being atheists?” with a statistic; while the question “What proportion of people on earth would report being atheists” is answered with an estimate of the parameter.</p>
+<p>The inferential tools for estimating population proportion are analogous to those used for means in the last lab: the confidence interval and the hypothesis test.</p>
+<div id="exercise">
+<p><strong>Exercise</strong>: Write out the conditions for inference to construct a 95% confidence interval for the proportion of atheists in the United States in 2012. Are you confident all conditions are met?</p>
+</div>
+<p>If the conditions for inference are reasonable, we can either calculate the standard error and construct the interval by hand, or allow the <code>inference</code> function to do it for us.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us12, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ci&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</code></pre></div>
+<pre><code>## Single categorical variable, success: atheist
+## n = 1002, p-hat = 0.0499
+## 95% CI: (0.0364 , 0.0634)</code></pre>
+<p><img src="04_inf_for_categorical_data_Coursera_files/figure-html/us-atheism-ci-1.png" width="672" /></p>
+<p>Note that since the goal is to construct an interval estimate for a proportion, it’s necessary to specify what constitutes a `<code>success'', which here is a response of</code>atheist`.</p>
+<p>Although formal confidence intervals and hypothesis tests don’t show up in the report, suggestions of inference appear at the bottom of page 7: “In general, the error margin for surveys of this kind is <span class="math inline">\(\pm\)</span> 3-5% at 95% confidence.”</p>
+<div id="exercise">
+<p><strong>Exercise</strong>: Imagine that, after reading a front page story about the latest public opinion poll, a family member asks you, “What is a margin of error?” In one sentence, and ignoring the mechanics behind the calculation, how would you respond in a way that conveys the general concept?</p>
+</div>
+<div id="answer">
+<p><strong>Answer</strong>: To represent the entire population there will be an offset from the point estimate either on the positive or the negative side based on the confidence level we need.</p>
+</div>
+<ol start="8" style="list-style-type: decimal">
+<li>Based on the R output, what is the margin of error for the estimate of the proportion of the proportion of atheists in US in 2012?
+<ol>
+<li>
+The margin of error for the estimate of the proportion of atheists in the US in 2012 is 0.05.
+</li>
+<li>
+The margin of error for the estimate of the proportion of atheists in the US in 2012 is 0.025.
+</li>
+<li>
+The margin of error for the estimate of the proportion of atheists in the US in 2012 is 0.0135.
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 8 here, and Knit</span>
+n &lt;-<span class="st"> </span><span class="dv">1002</span>
+p_hat &lt;-<span class="st"> </span><span class="fl">0.0499</span>
+se &lt;-<span class="st"> </span><span class="kw">sqrt</span>(p_hat<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>(p_hat))<span class="op">/</span>n)
+moe &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)<span class="op">*</span>se
+moe</code></pre></div>
+<pre><code>## [1] 0.01348184</code></pre>
+<div id="exercise">
+<p><strong>Exercise</strong>: Using the inference function, calculate confidence intervals for the proportion of atheists in 2012 in two other countries of your choice, and report the associated margins of error. Be sure to note whether the conditions for inference are met. It may be helpful to create new data sets for each of the two countries first, and then use these data sets in the <code>inference</code> function to construct the confidence intervals.</p>
+</div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Knit</span></code></pre></div>
+</div>
+<div id="how-does-the-proportion-affect-the-margin-of-error" class="section level2">
+<h2><span class="header-section-number">4.3</span> How does the proportion affect the margin of error?</h2>
+<p>Imagine you’ve set out to survey 1000 people on two questions: are you female? and are you left-handed? Since both of these sample proportions were calculated from the same sample size, they should have the same margin of error, right? Wrong! While the margin of error does change with sample size, it is also affected by the proportion.</p>
+<p>Think back to the formula for the standard error: <span class="math inline">\(SE = \sqrt{p(1-p)/n}\)</span>. This is then used in the formula for the margin of error for a 95% confidence interval: <span class="math inline">\(ME = 1.96\times SE = 1.96\times\sqrt{p(1-p)/n}\)</span>. Since the population proportion <span class="math inline">\(p\)</span> is in this <span class="math inline">\(ME\)</span> formula, it should make sense that the margin of error is in some way dependent on the population proportion. We can visualize this relationship by creating a plot of <span class="math inline">\(ME\)</span> vs. <span class="math inline">\(p\)</span>.</p>
+<p>The first step is to make a vector <code>p</code> that is a sequence from <span class="math inline">\(0\)</span> to <span class="math inline">\(1\)</span> with each number separated by <span class="math inline">\(0.01\)</span>. We can then create a vector of the margin of error (<code>me</code>) associated with each of these values of <code>p</code> using the familiar approximate formula (<span class="math inline">\(ME = 1.96 \times SE\)</span>). Lastly, we plot the two vectors against each other to reveal their relationship.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>))
+n &lt;-<span class="st"> </span><span class="dv">1000</span>
+d &lt;-<span class="st"> </span>d <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">me =</span> <span class="fl">1.96</span><span class="op">*</span><span class="kw">sqrt</span>(p<span class="op">*</span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>p)<span class="op">/</span>n))
+<span class="kw">ggplot</span>(d, <span class="kw">aes</span>(<span class="dt">x =</span> p, <span class="dt">y =</span> me)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_line</span>()</code></pre></div>
+<p><img src="04_inf_for_categorical_data_Coursera_files/figure-html/me-plot-1.png" width="672" /></p>
+<ol start="9" style="list-style-type: decimal">
+<li>Which of the following is false about the relationship between <span class="math inline">\(p\)</span> and <span class="math inline">\(ME\)</span>.
+<ol>
+<li>
+The <span class="math inline">\(ME\)</span> reaches a minimum at <span class="math inline">\(p = 0\)</span>.
+</li>
+<li>
+The <span class="math inline">\(ME\)</span> reaches a minimum at <span class="math inline">\(p = 1\)</span>.
+</li>
+<li>
+The <span class="math inline">\(ME\)</span> is maximized when <span class="math inline">\(p = 0.5\)</span>.
+</li>
+<li>
+The most conservative estimate when calculating a confidence interval occurs when <span class="math inline">\(p\)</span> is set to 1.
+</li>
+</ol></li>
+</ol>
+<p>The question of atheism was asked by WIN-Gallup International in a similar survey that was conducted in 2005. We assume here that sample sizes have remained the same. Table 4 on page 13 of the report summarizes survey results from 2005 and 2012 for 39 countries.</p>
+<p>Answer the following two questions using the <code>inference</code> function. As always, write out the hypotheses for any tests you conduct and outline the status of the conditions for inference.</p>
+<ol start="10" style="list-style-type: decimal">
+<li>True / False: There is convincing evidence that Spain has seen a change in its atheism index between 2005 and 2012. <br><br> <em>Hint:</em> Create a new data set for respondents from Spain. Then use their responses as the first input on the <code>inference</code>, and use <code>year</code> as the grouping variable.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 10 here, and Knit</span>
+spain &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;Spain&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">group_by</span>(year)
+
+<span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">data =</span> spain, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span> )</code></pre></div>
+<pre><code>## Response variable: categorical (2 levels, success: atheist)
+## Explanatory variable: categorical (2 levels) 
+## n_2005 = 1146, p_hat_2005 = 0.1003
+## n_2012 = 1145, p_hat_2012 = 0.09
+## H0: p_2005 =  p_2012
+## HA: p_2005 != p_2012
+## z = 0.8476
+## p_value = 0.3966</code></pre>
+<p><img src="04_inf_for_categorical_data_Coursera_files/figure-html/spain-05-12-1.png" width="672" /></p>
+<ol start="11" style="list-style-type: decimal">
+<li>True / False: There is convincing evidence that the United States has seen a change in its atheism index between 2005 and 2012.
+<ol>
+<li>
+True
+</li>
+<li>
+False
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 11 here, and Knit</span>
+us &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span>)
+
+<span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span>, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</code></pre></div>
+<pre><code>## Response variable: categorical (2 levels, success: atheist)
+## Explanatory variable: categorical (2 levels) 
+## n_2005 = 1002, p_hat_2005 = 0.01
+## n_2012 = 1002, p_hat_2012 = 0.0499
+## H0: p_2005 =  p_2012
+## HA: p_2005 != p_2012
+## z = -5.2431
+## p_value = &lt; 0.0001</code></pre>
+<p><img src="04_inf_for_categorical_data_Coursera_files/figure-html/us-05-12-1.png" width="672" /></p>
+<ol start="12" style="list-style-type: decimal">
+<li>If in fact there has been no change in the atheism index in the countries listed in Table 4, in how many of those countries would you expect to detect a change (at a significance level of 0.05) simply by chance? <br><br> <em>Hint:</em> Type 1 error.
+<ol>
+<li>
+0
+</li>
+<li>
+1
+</li>
+<li>
+1.95
+</li>
+<li>
+5
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 12 here, and Knit</span>
+sig_level =<span class="st"> </span><span class="fl">0.05</span>
+nt4 =<span class="st"> </span><span class="dv">39</span>
+Type_1_error &lt;-<span class="st"> </span>sig_level <span class="op">*</span><span class="st"> </span>nt4
+
+Type_1_error</code></pre></div>
+<pre><code>## [1] 1.95</code></pre>
+<ol start="13" style="list-style-type: decimal">
+<li>Suppose you’re hired by the local government to estimate the proportion of residents that attend a religious service on a weekly basis. According to the guidelines, the estimate must have a margin of error no greater than 1% with 95% confidence. You have no idea what to expect for <span class="math inline">\(p\)</span>. How many people would you have to sample to ensure that you are within the guidelines? <br><br> <em>Hint:</em> Refer to your plot of the relationship between <span class="math inline">\(p\)</span> and margin of error. Do not use the data set to answer this question.
+<ol>
+<li>
+2401 people
+</li>
+<li>
+At least 2401 people
+</li>
+<li>
+9604 people
+</li>
+<li>
+At least 9604 people
+</li>
+</ol></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 13 here, and Knit</span>
+p &lt;-<span class="st"> </span><span class="fl">0.5</span>
+z_crit &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)
+n_sample &lt;-<span class="st"> </span>z_crit<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>p<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p)<span class="op">/</span><span class="fl">0.01</span><span class="op">^</span><span class="dv">2</span>
+n_sample</code></pre></div>
+<pre><code>## [1] 9603.647</code></pre>
+<div id="license">
+<p>This is a product of OpenIntro that is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike 3.0 Unported</a>. This lab was written for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04_inf_for_categorical_data_Coursera.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["inferential_statistics.pdf", "inferential_statistics.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

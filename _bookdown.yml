@@ -1,0 +1,13 @@
+book_filename: "inferential_statistics"
+language:
+  ui:
+    chapter_name: ""
+delete_merged_file: true
+output_dir: "docs"
+
+rmd_files: ["index.Rmd",
+            "01_sampling_distributions_Coursera.Rmd",
+            "02_confidence_intervals_Coursera.Rmd",
+            "03_inf_for_numerical_data_Coursera.Rmd",
+            "04_inf_for_categorical_data_Coursera.Rmd",
+            "05_stat_inf_project_inferential_statistics.Rmd"]

@@ -1,7 +1,7 @@
 --- 
 title: "Inferential Statistics Course Activity"
 author: "Akshay Kotha"
-date: "`r Sys.Date()`"
+date: "2018-12-29"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -15,9 +15,4 @@ description: "This is the course activity week-by-week for the inferential stati
 
 Check out the list of weeks and the project to the left.
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+
