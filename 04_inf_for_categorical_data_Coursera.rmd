@@ -1,8 +1,6 @@
-# Week 4 {#week4}
+# Week 4 {-}
 
 Week 4 is about making inference from categorical data.
-
-
 
 ---
 title: "Inference for categorical data"
