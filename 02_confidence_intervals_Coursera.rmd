@@ -1,4 +1,4 @@
-# Week 2 {#week2}
+# Week 2 {-}
 
 Week 2 covers calculating confidence intervals. Below is the activity.
 
