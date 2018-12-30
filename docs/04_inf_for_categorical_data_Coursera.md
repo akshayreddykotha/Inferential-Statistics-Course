@@ -1,8 +1,6 @@
-# Week 4 {#week4}
+# Week 4 {-}
 
 Week 4 is about making inference from categorical data.
-
-
 
 ---
 title: "Inference for categorical data"
@@ -323,3 +321,5 @@ This is a product of OpenIntro that is released under a [Creative Commons
 Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0).
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
 </div>
+
+Lab activity answered by [Akshay Kotha](https:/twitter.com/AkshayKReddy)

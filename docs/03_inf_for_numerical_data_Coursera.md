@@ -1,4 +1,4 @@
-# Week 3 {#week3}
+# Week 3 {-}
 
 Week 3 is about making inferences about numerical data.
 

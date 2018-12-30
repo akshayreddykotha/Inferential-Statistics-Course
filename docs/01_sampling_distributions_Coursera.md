@@ -1,4 +1,4 @@
-# Week 1 {#week1}
+# Week 1 {-}
 
 Week 1 covers calculating sampling distributions. Below is the activity.
 
@@ -150,7 +150,7 @@ samp1 %>%
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   <dbl>
-## 1 1271.
+## 1 1521.
 ```
 
 Depending on which 50 homes you selected, your estimate could be a bit above 
@@ -178,7 +178,7 @@ ames %>%
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   <dbl>
-## 1 1506.
+## 1 1511.
 ```
 
 Not surprisingly, every time we take another random sample, we get a different 
@@ -301,16 +301,16 @@ sample_means_small
 ## # A tibble: 25 x 2
 ##    replicate x_bar_practice
 ##        <int>          <dbl>
-##  1         1          1641.
-##  2         2          1465.
-##  3         3          1680 
-##  4         4          1395.
-##  5         5          1488.
-##  6         6          1591.
-##  7         7          1461.
-##  8         8          1406.
-##  9         9          1366 
-## 10        10          1257.
+##  1         1          1504.
+##  2         2          1257.
+##  3         3          1270.
+##  4         4          1753.
+##  5         5          1385.
+##  6         6          1342.
+##  7         7          1464.
+##  8         8          1218.
+##  9         9          1581.
+## 10        10          1514.
 ## # ... with 15 more rows
 ```
 
@@ -372,7 +372,7 @@ samp1 %>%
 ## # A tibble: 1 x 1
 ##   mu_price
 ##      <dbl>
-## 1  161474.
+## 1  188123.
 ```
 
 <div id="exercise">
@@ -431,7 +431,7 @@ samp1price %>%
 ## # A tibble: 1 x 1
 ##   `mean(price)`
 ##           <dbl>
-## 1       196388.
+## 1        159350
 ```
 
 <div id="exercise">
@@ -494,7 +494,7 @@ sample_means50 %>%
 ## # A tibble: 1 x 1
 ##   `max(x_bar_price) - min(x_bar_price)`
 ##                                   <dbl>
-## 1                                77994.
+## 1                                77479.
 ```
 
 ```r
@@ -506,7 +506,7 @@ sample_means150 %>%
 ## # A tibble: 1 x 1
 ##   `max(x_bar_price150) - min(x_bar_price150)`
 ##                                         <dbl>
-## 1                                      46172.
+## 1                                      41661.
 ```
 
 <div id="license">
