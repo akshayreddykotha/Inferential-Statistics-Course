@@ -1,4 +1,4 @@
-# Week 5 {#week5}
+# Week 5 {-}
 
 Week 5 entails a mini-project which covers framing the research question, doing exploratory data analysis and answering the research question with the help of statistical inference.
 
