@@ -11,9 +11,11 @@ link-citations: yes
 github-repo: akshaykumarreddy/stat-inference-proj
 description: "This is the course activity week-by-week for the inferential statistics course on coursera."
 ---
-# Preface {-}
+# Summary {-}
 
-Check out the list of weeks and the project to the left.
+Check out the course activity in the list of weeks and the final project to the left.
+
+Github repo link for this course: https://github.com/akshayreddykotha/stat-inference-proj
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
