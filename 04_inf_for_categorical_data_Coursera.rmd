@@ -260,4 +260,4 @@ Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
 </div>
 
-Lab activity answered by [Akshay Kotha](https://twitter.com/AkshayKReddy)
+Lab activity answered by: [Akshay Kotha](https://linkedin.com/in/akshaykotha)
