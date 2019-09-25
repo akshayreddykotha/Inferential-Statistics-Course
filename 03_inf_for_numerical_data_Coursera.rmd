@@ -22,7 +22,7 @@ companion package for this course, `statsr`.
 
 Let's load the packages.
 
-```{r load-packages, message=FALSE}
+```{r load-packages-3, message=FALSE}
 library(statsr)
 library(dplyr)
 library(ggplot2)
@@ -38,7 +38,7 @@ observations from this data set.
 
 Load the `nc` data set into our workspace.
 
-```{r load-data}
+```{r load-data-3}
 data(nc)
 ```
 
@@ -265,6 +265,8 @@ nc %>%
   summarise(min = min(mage), max = max(mage)) # summarizing the ages in a table
 ```
 
+The minimum and maximum age of both categories are showcased which is the cutoff when it comes to the `nc` dataset.
+
 <div id="exercise">
 **Exercise**: Pick a pair of variables: one numerical (response) and one categorical 
 (explanatory). Come up with a research question evaluating the relationship between 
@@ -277,14 +279,32 @@ and analyzing the data to answer this question is basically what you'll need to 
 your project as well.)
 </div>
 
-```{r pick-your-own}
+```{r pick-your-own-1weeks-2habit}
 # type your code for the Exercise here, and Knit
+nc %>%
+  group_by(habit) %>%
+  summarise(avg = mean(gained, na.rm = TRUE), count = sum(is.na(gained)))
 
 ```
 
+Let's find out if the difference between weight gained for a nonsmoker and a smoker is statistically significant.
+
+```{r hypothesis-test-t-value}
+
+inference(y = gained, x = habit, data = nc, statistic = "mean", type = "ht", null = 0, alternative = "twosided", method = "theoretical")
+
+```
+
+**Check conditions of t-test and interpret:**
+
+The absolute [t-value](https://statisticsbyjim.com/hypothesis-testing/t-tests-t-values-t-distributions-probabilities/) and the corresponding p-value (0.2237) (w.r.t the standard significance level) implies that the difference in weight gained for smoker and non-smoker mothers is statistically not significant.
 
 <div id="license">
 This is a product of OpenIntro that is released under a [Creative Commons 
 Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0).
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
+</div>
+
+<div>
+Questions answered and comments by [Akshay Kotha](https://linkedin.com/in/akshaykotha)
 </div>

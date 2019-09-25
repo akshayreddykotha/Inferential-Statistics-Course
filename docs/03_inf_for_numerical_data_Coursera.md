@@ -162,6 +162,11 @@ nc %>%
 ```
 
 ```
+## Warning: Factor `habit` contains implicit NA, consider using
+## `forcats::fct_explicit_na`
+```
+
+```
 ## # A tibble: 3 x 2
 ##   habit     mean_weight
 ##   <fct>           <dbl>
@@ -190,6 +195,11 @@ test.
 nc %>%
   group_by(habit) %>%
   summarise(no_of_cases = n())
+```
+
+```
+## Warning: Factor `habit` contains implicit NA, consider using
+## `forcats::fct_explicit_na`
 ```
 
 ```
@@ -383,10 +393,12 @@ nc %>%
 ```
 ## # A tibble: 2 x 3
 ##   mature        min   max
-##   <fct>       <dbl> <dbl>
+##   <fct>       <int> <int>
 ## 1 mature mom     35    50
 ## 2 younger mom    13    34
 ```
+
+The minimum and maximum age of both categories are showcased which is the cutoff when it comes to the `nc` dataset.
 
 <div id="exercise">
 **Exercise**: Pick a pair of variables: one numerical (response) and one categorical 
@@ -403,11 +415,55 @@ your project as well.)
 
 ```r
 # type your code for the Exercise here, and Knit
+nc %>%
+  group_by(habit) %>%
+  summarise(avg = mean(gained, na.rm = TRUE), count = sum(is.na(gained)))
 ```
 
+```
+## Warning: Factor `habit` contains implicit NA, consider using
+## `forcats::fct_explicit_na`
+```
+
+```
+## # A tibble: 3 x 3
+##   habit       avg count
+##   <fct>     <dbl> <int>
+## 1 nonsmoker  30.1    22
+## 2 smoker     31.9     4
+## 3 <NA>      NaN       1
+```
+
+Let's find out if the difference between weight gained for a nonsmoker and a smoker is statistically significant.
+
+
+```r
+inference(y = gained, x = habit, data = nc, statistic = "mean", type = "ht", null = 0, alternative = "twosided", method = "theoretical")
+```
+
+```
+## Response variable: numerical
+## Explanatory variable: categorical (2 levels) 
+## n_nonsmoker = 851, y_bar_nonsmoker = 30.0964, s_nonsmoker = 14.0226
+## n_smoker = 122, y_bar_smoker = 31.9262, s_smoker = 15.6512
+## H0: mu_nonsmoker =  mu_smoker
+## HA: mu_nonsmoker != mu_smoker
+## t = -1.2229, df = 121
+## p_value = 0.2237
+```
+
+<img src="03_inf_for_numerical_data_Coursera_files/figure-html/hypothesis-test-t-value-1.png" width="672" />
+
+**Check conditions of t-test and interpret:**
+
+The absolute [t-value](https://statisticsbyjim.com/hypothesis-testing/t-tests-t-values-t-distributions-probabilities/) and the corresponding p-value (0.2237) (w.r.t the standard significance level) implies that the difference in weight gained for smoker and non-smoker mothers is statistically not significant.
 
 <div id="license">
 This is a product of OpenIntro that is released under a [Creative Commons 
 Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0).
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
+</div>
+
+<div>
+Questions answered and comments by [Akshay Kotha](https://linkedin.com/in/akshaykotha)
 </div>

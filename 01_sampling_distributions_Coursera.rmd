@@ -22,7 +22,7 @@ companion package for this course, `statsr`.
 
 Let's load the packages.
 
-```{r load-packages, message=FALSE}
+```{r load-packages-1, message=FALSE}
 library(statsr)
 library(dplyr)
 library(shiny)
@@ -38,7 +38,7 @@ in Ames between 2006 and 2010.  This collection represents our population of
 interest. In this lab we would like to learn about these home sales by taking 
 smaller samples from the full population. Let's load the data.
 
-```{r load-data}
+```{r load-data-1}
 data(ames)
 ```
 

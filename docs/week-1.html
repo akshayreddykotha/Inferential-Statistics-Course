@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Week 1 | Inferential Statistics Course Activity</title>
-  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Week 1 | Inferential Statistics Course Activity" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
   
 
-<meta name="author" content="Akshay Kotha">
+<meta name="author" content="Akshay Kotha" />
 
 
-<meta name="date" content="2018-12-30">
+<meta name="date" content="2019-09-25" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="index.html">
@@ -51,41 +50,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -174,38 +198,60 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1>Week 1</h1>
 <p>Week 1 covers calculating sampling distributions. Below is the activity.</p>
 <div id="instructions">
-<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera platform.</p>
+<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera
+platform.</p>
 </div>
 <div id="getting-started" class="section level2">
 <h2><span class="header-section-number">0.1</span> Getting Started</h2>
 <div id="load-packages" class="section level3">
 <h3><span class="header-section-number">0.1.1</span> Load packages</h3>
-<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it using the <code>ggplot2</code> package for data visualization. The data can be found in the companion package for this course, <code>statsr</code>.</p>
+<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it
+using the <code>ggplot2</code> package for data visualization. The data can be found in the
+companion package for this course, <code>statsr</code>.</p>
 <p>Let’s load the packages.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(statsr)
-<span class="kw">library</span>(dplyr)
-<span class="kw">library</span>(shiny)
-<span class="kw">library</span>(ggplot2)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(statsr)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(shiny)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
 </div>
 <div id="the-data" class="section level3">
 <h3><span class="header-section-number">0.1.2</span> The data</h3>
-<p>We consider real estate data from the city of Ames, Iowa. The details of every real estate transaction in Ames is recorded by the City Assessor’s office. Our particular focus for this lab will be all residential home sales in Ames between 2006 and 2010. This collection represents our population of interest. In this lab we would like to learn about these home sales by taking smaller samples from the full population. Let’s load the data.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(ames)</code></pre></div>
-<p>We see that there are quite a few variables in the data set, enough to do a very in-depth analysis. For this lab, we’ll restrict our attention to just two of the variables: the above ground living area of the house in square feet (<code>area</code>) and the sale price (<code>price</code>).</p>
-<p>We can explore the distribution of areas of homes in the population of home sales visually and with summary statistics. Let’s first create a visualization, a histogram:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> ames, <span class="kw">aes</span>(<span class="dt">x =</span> area)) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">250</span>)</code></pre></div>
+<p>We consider real estate data from the city of Ames, Iowa. The details of
+every real estate transaction in Ames is recorded by the City Assessor’s
+office. Our particular focus for this lab will be all residential home sales
+in Ames between 2006 and 2010. This collection represents our population of
+interest. In this lab we would like to learn about these home sales by taking
+smaller samples from the full population. Let’s load the data.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">data</span>(ames)</a></code></pre></div>
+<p>We see that there are quite a few variables in the data set, enough to do a
+very in-depth analysis. For this lab, we’ll restrict our attention to just
+two of the variables: the above ground living area of the house in square feet
+(<code>area</code>) and the sale price (<code>price</code>).</p>
+<p>We can explore the distribution of areas of homes in the population of home
+sales visually and with summary statistics. Let’s first create a visualization,
+a histogram:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> ames, <span class="kw">aes</span>(<span class="dt">x =</span> area)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">250</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/area-hist-1.png" width="672" /></p>
-<p>Let’s also obtain some summary statistics. Note that we can do this using the <code>summarise</code> function. We can calculate as many statistics as we want using this function, and just string along the results. Some of the functions below should be self explanatory (like <code>mean</code>, <code>median</code>, <code>sd</code>, <code>IQR</code>, <code>min</code>, and <code>max</code>). A new function here is the <code>quantile</code> function which we can use to calculate values corresponding to specific percentile cutoffs in the distribution. For example <code>quantile(x, 0.25)</code> will yield the cutoff value for the 25th percentile (Q1) in the distribution of x. Finding these values are useful for describing the distribution, as we can use them for descriptions like <em>“the middle 50% of the homes have areas between such and such square feet”</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu =</span> <span class="kw">mean</span>(area), <span class="dt">pop_med =</span> <span class="kw">median</span>(area), 
-            <span class="dt">sigma =</span> <span class="kw">sd</span>(area), <span class="dt">pop_iqr =</span> <span class="kw">IQR</span>(area),
-            <span class="dt">pop_min =</span> <span class="kw">min</span>(area), <span class="dt">pop_max =</span> <span class="kw">max</span>(area),
-            <span class="dt">pop_q1 =</span> <span class="kw">quantile</span>(area, <span class="fl">0.25</span>),  <span class="co"># first quartile, 25th percentile</span>
-            <span class="dt">pop_q3 =</span> <span class="kw">quantile</span>(area, <span class="fl">0.75</span>))  <span class="co"># third quartile, 75th percentile</span></code></pre></div>
+<p>Let’s also obtain some summary statistics. Note that we can do this using the
+<code>summarise</code> function. We can calculate as many statistics as we want using this
+function, and just string along the results. Some of the functions below should
+be self explanatory (like <code>mean</code>, <code>median</code>, <code>sd</code>, <code>IQR</code>, <code>min</code>, and <code>max</code>). A
+new function here is the <code>quantile</code> function which we can use to calculate
+values corresponding to specific percentile cutoffs in the distribution. For
+example <code>quantile(x, 0.25)</code> will yield the cutoff value for the 25th percentile (Q1)
+in the distribution of x. Finding these values are useful for describing the
+distribution, as we can use them for descriptions like <em>“the middle 50% of the
+homes have areas between such and such square feet”</em>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu =</span> <span class="kw">mean</span>(area), <span class="dt">pop_med =</span> <span class="kw">median</span>(area), </a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">            <span class="dt">sigma =</span> <span class="kw">sd</span>(area), <span class="dt">pop_iqr =</span> <span class="kw">IQR</span>(area),</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">            <span class="dt">pop_min =</span> <span class="kw">min</span>(area), <span class="dt">pop_max =</span> <span class="kw">max</span>(area),</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">            <span class="dt">pop_q1 =</span> <span class="kw">quantile</span>(area, <span class="fl">0.25</span>),  <span class="co"># first quartile, 25th percentile</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">            <span class="dt">pop_q3 =</span> <span class="kw">quantile</span>(area, <span class="fl">0.75</span>))  <span class="co"># third quartile, 75th percentile</span></a></code></pre></div>
 <pre><code>## # A tibble: 1 x 8
 ##      mu pop_med sigma pop_iqr pop_min pop_max pop_q1 pop_q3
-##   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+##   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;  &lt;dbl&gt;
 ## 1 1500.    1442  506.    617.     334    5642   1126  1743.</code></pre>
 <ol style="list-style-type: decimal">
 <li>Which of the following is <strong>false</strong>?
@@ -231,26 +277,39 @@ The smallest house is 334 square feet and the largest is 5,642 square feet.
 </div>
 <div id="the-unknown-sampling-distribution" class="section level2">
 <h2><span class="header-section-number">0.2</span> The unknown sampling distribution</h2>
-<p>In this lab we have access to the entire population, but this is rarely the case in real life. Gathering information on an entire population is often extremely costly or impossible. Because of this, we often take a sample of the population and use that to understand the properties of the population.</p>
-<p>If we were interested in estimating the mean living area in Ames based on a sample, we can use the following command to survey the population.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">samp1 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>)</code></pre></div>
-<p>This command collects a simple random sample of <code>size</code> 50 from the <code>ames</code> dataset, which is assigned to <code>samp1</code>. This is like going into the City Assessor’s database and pulling up the files on 50 random home sales. Working with these 50 files would be considerably simpler than working with all 2930 home sales.</p>
+<p>In this lab we have access to the entire population, but this is rarely the
+case in real life. Gathering information on an entire population is often
+extremely costly or impossible. Because of this, we often take a sample of
+the population and use that to understand the properties of the population.</p>
+<p>If we were interested in estimating the mean living area in Ames based on a
+sample, we can use the following command to survey the population.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">samp1 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>)</a></code></pre></div>
+<p>This command collects a simple random sample of <code>size</code> 50 from the <code>ames</code> dataset,
+which is assigned to <code>samp1</code>. This is like going into the City
+Assessor’s database and pulling up the files on 50 random home sales. Working
+with these 50 files would be considerably simpler than working with all 2930
+home sales.</p>
 <div id="exercise">
 <p><strong>Exercise</strong>: Describe the distribution of this sample? How does it compare to the distribution of the population? <strong>Hint:</strong> <code>sample_n</code> function takes a random sample of observations (i.e. rows) from the dataset, you can still refer to the variables in the dataset with the same names. Code you used in the previous exercise will also be helpful for visualizing and summarizing the sample, however be careful to not label values <code>mu</code> and <code>sigma</code> anymore since these are sample statistics, not population parameters. You can customize the labels of any of the statistics to indicate that these come from the sample.</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Run Document</span>
-<span class="kw">ggplot</span>(samp1, <span class="kw">aes</span>(<span class="dt">x =</span> area)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">200</span>)</code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># type your code for the Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">ggplot</span>(samp1, <span class="kw">aes</span>(<span class="dt">x =</span> area)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">200</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/samp1-dist-1.png" width="672" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># The distribution is symmetric unlike the population distribution</span></code></pre></div>
-<p>If we’re interested in estimating the average living area in homes in Ames using the sample, our best single guess is the sample mean.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">samp1 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="co"># The distribution is symmetric unlike the population distribution</span></a></code></pre></div>
+<p>If we’re interested in estimating the average living area in homes in Ames
+using the sample, our best single guess is the sample mean.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">samp1 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   x_bar
 ##   &lt;dbl&gt;
-## 1 1521.</code></pre>
-<p>Depending on which 50 homes you selected, your estimate could be a bit above or a bit below the true population mean of 1,499.69 square feet. In general, though, the sample mean turns out to be a pretty good estimate of the average living area, and we were able to get it by sampling less than 3% of the population.</p>
+## 1 1608.</code></pre>
+<p>Depending on which 50 homes you selected, your estimate could be a bit above
+or a bit below the true population mean of 1,499.69 square feet. In general,
+though, the sample mean turns out to be a pretty good estimate of the average
+living area, and we were able to get it by sampling less than 3% of the
+population.</p>
 <ol start="2" style="list-style-type: decimal">
 <li>Suppose we took two more samples, one of size 100 and one of size 1000. Which would you think would provide a more accurate estimate of the population mean?
 <ol>
@@ -266,56 +325,74 @@ Sample size of 1000.
 </ol></li>
 </ol>
 <p>Let’s take one more sample of size 50, and view the mean area in this sample:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">1000</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">1000</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb11-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   x_bar
 ##   &lt;dbl&gt;
-## 1 1511.</code></pre>
-<p>Not surprisingly, every time we take another random sample, we get a different sample mean. It’s useful to get a sense of just how much variability we should expect when estimating the population mean this way. The distribution of sample means, called the <em>sampling distribution</em>, can help us understand this variability. In this lab, because we have access to the population, we can build up the sampling distribution for the sample mean by repeating the above steps many times. Here we will generate 15,000 samples and compute the sample mean of each. Note that we are sampling with replacement, <code>replace = TRUE</code> since sampling distributions are constructed with sampling with replacement.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sample_means50 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">                    </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">reps =</span> <span class="dv">15000</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">                    </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))
-
-<span class="kw">ggplot</span>(<span class="dt">data =</span> sample_means50, <span class="kw">aes</span>(<span class="dt">x =</span> x_bar)) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">20</span>)</code></pre></div>
+## 1 1519.</code></pre>
+<p>Not surprisingly, every time we take another random sample, we get a different
+sample mean. It’s useful to get a sense of just how much variability we
+should expect when estimating the population mean this way. The distribution
+of sample means, called the <em>sampling distribution</em>, can help us understand
+this variability. In this lab, because we have access to the population, we
+can build up the sampling distribution for the sample mean by repeating the
+above steps many times. Here we will generate 15,000 samples and compute the
+sample mean of each. Note that we are sampling with replacement,
+<code>replace = TRUE</code> since sampling distributions are constructed with sampling
+with replacement.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">sample_means50 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="st">                    </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">reps =</span> <span class="dv">15000</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-3" data-line-number="3"><span class="st">                    </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</a>
+<a class="sourceLine" id="cb13-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb13-5" data-line-number="5"><span class="kw">ggplot</span>(<span class="dt">data =</span> sample_means50, <span class="kw">aes</span>(<span class="dt">x =</span> x_bar)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb13-6" data-line-number="6"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">20</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/loop-1.png" width="672" /></p>
-<p>Here we use R to take 15,000 samples of size 50 from the population, calculate the mean of each sample, and store each result in a vector called <code>sample_means50</code>. Next, we review how this set of code works.</p>
+<p>Here we use R to take 15,000 samples of size 50 from the population, calculate
+the mean of each sample, and store each result in a vector called
+<code>sample_means50</code>. Next, we review how this set of code works.</p>
 <div id="exercise">
 <p><strong>Exercise</strong>: How many elements are there in <code>sample_means50</code>? Describe the sampling distribution, and be sure to specifically note its center. Make sure to include a plot of the distribution in your answer.</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Run Document</span>
-
-<span class="co">#No. of elements in sample_means50</span>
-<span class="kw">dim</span>(sample_means50)</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="co"># type your code for the Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb14-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="co">#No. of elements in sample_means50</span></a>
+<a class="sourceLine" id="cb14-4" data-line-number="4"><span class="kw">dim</span>(sample_means50)</a></code></pre></div>
 <pre><code>## [1] 15000     2</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Center of sampling distribution</span>
-sample_means50 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">means =</span> <span class="kw">mean</span>(x_bar))</code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="co"># Center of sampling distribution</span></a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">sample_means50 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb16-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">means =</span> <span class="kw">mean</span>(x_bar))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   means
 ##   &lt;dbl&gt;
 ## 1 1500.</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Given that 15000 samples are considered, the distribution resembles a normal distribution and it looks symmetric. Sample means vary around the population mean equally.</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="co">#Given that 15000 samples are considered, the distribution resembles a normal distribution and it looks symmetric. Sample means vary around the population mean equally.</span></a></code></pre></div>
 </div>
 <div id="interlude-sampling-distributions" class="section level2">
 <h2><span class="header-section-number">0.3</span> Interlude: Sampling distributions</h2>
-<p>The idea behind the <code>rep_sample_n</code> function is <em>repetition</em>. Earlier we took a single sample of size <code>n</code> (50) from the population of all houses in Ames. With this new function we are able to repeat this sampling procedure <code>rep</code> times in order to build a distribution of a series of sample statistics, which is called the <strong>sampling distribution</strong>.</p>
-<p>Note that in practice one rarely gets to build sampling distributions, because we rarely have access to data from the entire population.</p>
-<p>Without the <code>rep_sample_n</code> function, this would be painful. We would have to manually run the following code 15,000 times</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<p>The idea behind the <code>rep_sample_n</code> function is <em>repetition</em>. Earlier we took
+a single sample of size <code>n</code> (50) from the population of all houses in Ames. With
+this new function we are able to repeat this sampling procedure <code>rep</code> times in order
+to build a distribution of a series of sample statistics, which is called the
+<strong>sampling distribution</strong>.</p>
+<p>Note that in practice one rarely gets to build sampling distributions,
+because we rarely have access to data from the entire population.</p>
+<p>Without the <code>rep_sample_n</code> function, this would be painful. We would have to
+manually run the following code 15,000 times</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb19-2" data-line-number="2"><span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb19-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar =</span> <span class="kw">mean</span>(area))</a></code></pre></div>
 <p>as well as store the resulting sample means each time in a separate vector.</p>
-<p>Note that for each of the 15,000 times we computed a mean, we did so from a <strong>different</strong> sample!</p>
+<p>Note that for each of the 15,000 times we computed a mean, we did so from a
+<strong>different</strong> sample!</p>
 <div id="exercise">
 <p><strong>Exercise</strong>: To make sure you understand how sampling distributions are built, and exactly what the <code>sample_n</code> and <code>do</code> function do, try modifying the code to create a sampling distribution of <strong>25 sample means</strong> from <strong>samples of size 10</strong>, and put them in a data frame named <code>sample_means_small</code>. Print the output. How many observations are there in this object called <code>sample_means_small</code>? What does each observation represent?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Run Document</span>
-sample_means_small &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">                    </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">10</span>, <span class="dt">reps =</span> <span class="dv">25</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">                    </span><span class="kw">summarise</span>(<span class="dt">x_bar_practice =</span> <span class="kw">mean</span>(area))</code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="co"># type your code for the Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb20-2" data-line-number="2">sample_means_small &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb20-3" data-line-number="3"><span class="st">                    </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">10</span>, <span class="dt">reps =</span> <span class="dv">25</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb20-4" data-line-number="4"><span class="st">                    </span><span class="kw">summarise</span>(<span class="dt">x_bar_practice =</span> <span class="kw">mean</span>(area))</a></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>How many elements are there in this object called <code>sample_means_small</code>?
 <ol>
@@ -336,24 +413,24 @@ sample_means_small &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</s
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 3 here, and Run Document</span>
-<span class="kw">dim</span>(sample_means_small)</code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1"><span class="co"># type your code for Question 3 here, and Run Document</span></a>
+<a class="sourceLine" id="cb21-2" data-line-number="2"><span class="kw">dim</span>(sample_means_small)</a></code></pre></div>
 <pre><code>## [1] 25  2</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sample_means_small</code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">sample_means_small</a></code></pre></div>
 <pre><code>## # A tibble: 25 x 2
 ##    replicate x_bar_practice
 ##        &lt;int&gt;          &lt;dbl&gt;
-##  1         1          1504.
-##  2         2          1257.
-##  3         3          1270.
-##  4         4          1753.
-##  5         5          1385.
-##  6         6          1342.
-##  7         7          1464.
-##  8         8          1218.
-##  9         9          1581.
+##  1         1          1778.
+##  2         2          1485.
+##  3         3          1520.
+##  4         4          1395.
+##  5         5          1594.
+##  6         6          1328.
+##  7         7          1782.
+##  8         8          1550.
+##  9         9          1328.
 ## 10        10          1514.
-## # ... with 15 more rows</code></pre>
+## # … with 15 more rows</code></pre>
 <ol start="4" style="list-style-type: decimal">
 <li>Which of the following is <strong>true</strong> about the elements in the sampling distributions you created?
 <ol>
@@ -371,16 +448,26 @@ Each element represents the true population mean of square footage of houses.
 </div>
 <div id="sample-size-and-the-sampling-distribution" class="section level2">
 <h2><span class="header-section-number">0.4</span> Sample size and the sampling distribution</h2>
-<p>Mechanics aside, let’s return to the reason we used the <code>rep_sample_n</code> function: to compute a sampling distribution, specifically, this one.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> sample_means50, <span class="kw">aes</span>(<span class="dt">x =</span> x_bar)) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">20</span>)</code></pre></div>
+<p>Mechanics aside, let’s return to the reason we used the <code>rep_sample_n</code> function: to
+compute a sampling distribution, specifically, this one.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> sample_means50, <span class="kw">aes</span>(<span class="dt">x =</span> x_bar)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb25-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">20</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/hist-1.png" width="672" /></p>
-<p>The sampling distribution that we computed tells us much about estimating the average living area in homes in Ames. Because the sample mean is an unbiased estimator, the sampling distribution is centered at the true average living area of the population, and the spread of the distribution indicates how much variability is induced by sampling only 50 home sales.</p>
-<p>In the remainder of this section we will work on getting a sense of the effect that sample size has on our sampling distribution.</p>
+<p>The sampling distribution that we computed tells us much about estimating
+the average living area in homes in Ames. Because the sample mean is an
+unbiased estimator, the sampling distribution is centered at the true average
+living area of the population, and the spread of the distribution
+indicates how much variability is induced by sampling only 50 home sales.</p>
+<p>In the remainder of this section we will work on getting a sense of the effect that
+sample size has on our sampling distribution.</p>
 <div id="exercise">
 <p><strong>Exercise</strong>: Use the app below to create sampling distributions of means of <code>area</code>s from samples of size 10, 50, and 100. Use 5,000 simulations. What does each observation in the sampling distribution represent? How does the mean, standard error, and shape of the sampling distribution change as the sample size increases? How (if at all) do these values change if you increase the number of simulations?</p>
 </div>
-<div style="width: 100% ; height: 500px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div>
+<pre><code>## 
+## Listening on http://127.0.0.1:7693</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_bar).</code></pre>
+<p><img src="01_sampling_distributions_Coursera_files/figure-html/shiny-1.png" width="672" /></p>
 <ol start="5" style="list-style-type: decimal">
 <li>It makes intuitive sense that as the sample size increases, the center of the sampling distribution becomes a more reliable estimate for the true population mean. Also as the sample size increases, the variability of the sampling distribution ________.
 <ol>
@@ -398,62 +485,65 @@ stays the same
 <div id="exercise">
 <p><strong>Exercise</strong>: Take a random sample of size 50 from <code>price</code>. Using this sample, what is your best point estimate of the population mean?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-
-samp1 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu_price =</span> <span class="kw">mean</span>(price))</code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb29-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb29-3" data-line-number="3">samp1 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb29-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu_price =</span> <span class="kw">mean</span>(price))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   mu_price
 ##      &lt;dbl&gt;
-## 1  188123.</code></pre>
+## 1  197842.</code></pre>
 <div id="exercise">
 <p><strong>Exercise</strong>: Since you have access to the population, simulate the sampling distribution for <span class="math inline">\(\bar{x}_{price}\)</span> by taking 5000 samples from the population of size 50 and computing 5000 sample means. Store these means in a vector called <code>sample_means50</code>. Plot the data, then describe the shape of this sampling distribution. Based on this sampling distribution, what would you guess the mean home price of the population to be?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-sample_means50 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">reps  =</span> <span class="dv">5000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price =</span> <span class="kw">mean</span>(price))
-
-<span class="kw">ggplot</span>(sample_means50,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb31-2" data-line-number="2">sample_means50 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb31-3" data-line-number="3"><span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">reps  =</span> <span class="dv">5000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb31-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price =</span> <span class="kw">mean</span>(price))</a>
+<a class="sourceLine" id="cb31-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb31-6" data-line-number="6"><span class="kw">ggplot</span>(sample_means50,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/price-sampling-1.png" width="672" /></p>
 <div id="exercise">
 <p><strong>Exercise</strong>: Change your sample size from 50 to 150, then compute the sampling distribution using the same method as above, and store these means in a new vector called <code>sample_means150</code>. Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample size of 50. Based on this sampling distribution, what would you guess to be the mean sale price of homes in Ames?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-sample_means150 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">150</span>, <span class="dt">reps  =</span> <span class="dv">5000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price =</span> <span class="kw">mean</span>(price))
-
-<span class="kw">ggplot</span>(sample_means150,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb32-2" data-line-number="2">sample_means150 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb32-3" data-line-number="3"><span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">150</span>, <span class="dt">reps  =</span> <span class="dv">5000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb32-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price =</span> <span class="kw">mean</span>(price))</a>
+<a class="sourceLine" id="cb32-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb32-6" data-line-number="6"><span class="kw">ggplot</span>(sample_means150,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/price-sampling-more-1.png" width="672" /></p>
 <hr />
-<p>So far, we have only focused on estimating the mean living area in homes in Ames. Now you’ll try to estimate the mean home price.</p>
-<p>Note that while you might be able to answer some of these questions using the app you are expected to write the required code and produce the necessary plots and summary statistics. You are welcomed to use the app for exploration.</p>
+<p>So far, we have only focused on estimating the mean living area in homes in
+Ames. Now you’ll try to estimate the mean home price.</p>
+<p>Note that while you might be able to answer some of these questions using the app
+you are expected to write the required code and produce the necessary plots and
+summary statistics. You are welcomed to use the app for exploration.</p>
 <div id="exercise">
 <p><strong>Exercise</strong>: Take a sample of size 15 from the population and calculate the mean <code>price</code> of the homes in this sample. Using this sample, what is your best point estimate of the population mean of prices of homes?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-samp1price &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">15</span>) 
-
-samp1price <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="kw">mean</span>(price))</code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb33-2" data-line-number="2">samp1price &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb33-3" data-line-number="3"><span class="st">  </span><span class="kw">sample_n</span>(<span class="dt">size =</span> <span class="dv">15</span>) </a>
+<a class="sourceLine" id="cb33-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb33-5" data-line-number="5">samp1price <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb33-6" data-line-number="6"><span class="st">  </span><span class="kw">summarise</span>(<span class="kw">mean</span>(price))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   `mean(price)`
 ##           &lt;dbl&gt;
-## 1        159350</code></pre>
+## 1       178137.</code></pre>
 <div id="exercise">
 <p><strong>Exercise</strong>: Since you have access to the population, simulate the sampling distribution for <span class="math inline">\(\bar{x}_{price}\)</span> by taking 2000 samples from the population of size 15 and computing 2000 sample means. Store these means in a vector called <code>sample_means15</code>. Plot the data, then describe the shape of this sampling distribution. Based on this sampling distribution, what would you guess the mean home price of the population to be? Finally, calculate and report the population mean.</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-sample_means15 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">15</span>, <span class="dt">reps  =</span> <span class="dv">2000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price15 =</span> <span class="kw">mean</span>(price))
-
-<span class="kw">ggplot</span>(sample_means15,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price15)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb35-2" data-line-number="2">sample_means15 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb35-3" data-line-number="3"><span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">15</span>, <span class="dt">reps  =</span> <span class="dv">2000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb35-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price15 =</span> <span class="kw">mean</span>(price))</a>
+<a class="sourceLine" id="cb35-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb35-6" data-line-number="6"><span class="kw">ggplot</span>(sample_means15,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price15)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/price-sampling-small-1.png" width="672" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu_price =</span> <span class="kw">mean</span>(price))</code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" data-line-number="1">ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb36-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mu_price =</span> <span class="kw">mean</span>(price))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   mu_price
 ##      &lt;dbl&gt;
@@ -461,12 +551,12 @@ sample_means15 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
 <div id="exercise">
 <p><strong>Exercise</strong>: Change your sample size from 15 to 150, then compute the sampling distribution using the same method as above, and store these means in a new vector called <code>sample_means150</code>. Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample size of 15. Based on this sampling distribution, what would you guess to be the mean sale price of homes in Ames?</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for this Exercise here, and Run Document</span>
-sample_means150 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">150</span>, <span class="dt">reps  =</span> <span class="dv">2000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price150 =</span> <span class="kw">mean</span>(price))
-
-<span class="kw">ggplot</span>(sample_means150,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price150)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" data-line-number="1"><span class="co"># type your code for this Exercise here, and Run Document</span></a>
+<a class="sourceLine" id="cb38-2" data-line-number="2">sample_means150 &lt;-<span class="st"> </span>ames <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb38-3" data-line-number="3"><span class="st">  </span><span class="kw">rep_sample_n</span>(<span class="dt">size =</span> <span class="dv">150</span>, <span class="dt">reps  =</span> <span class="dv">2000</span>, <span class="dt">replace =</span>  <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb38-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">x_bar_price150 =</span> <span class="kw">mean</span>(price))</a>
+<a class="sourceLine" id="cb38-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb38-6" data-line-number="6"><span class="kw">ggplot</span>(sample_means150,<span class="kw">aes</span>(<span class="dt">x =</span> x_bar_price150)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1000</span>)</a></code></pre></div>
 <p><img src="01_sampling_distributions_Coursera_files/figure-html/price-sampling-big-1.png" width="672" /></p>
 <ol start="6" style="list-style-type: decimal">
 <li>Which of the following is false?
@@ -482,20 +572,20 @@ Both sampling distributions are symmetric.
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 6 here, and Run Document</span>
-<span class="co"># Comparing variability between two sampling distributions (n=50), (n =150)</span>
-sample_means50 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>( <span class="kw">max</span>(x_bar_price)<span class="op">-</span><span class="kw">min</span>(x_bar_price))</code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1"><span class="co"># type your code for Question 6 here, and Run Document</span></a>
+<a class="sourceLine" id="cb39-2" data-line-number="2"><span class="co"># Comparing variability between two sampling distributions (n=50), (n =150)</span></a>
+<a class="sourceLine" id="cb39-3" data-line-number="3">sample_means50 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb39-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>( <span class="kw">max</span>(x_bar_price)<span class="op">-</span><span class="kw">min</span>(x_bar_price))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   `max(x_bar_price) - min(x_bar_price)`
 ##                                   &lt;dbl&gt;
-## 1                                77479.</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sample_means150 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="kw">max</span>(x_bar_price150) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(x_bar_price150))</code></pre></div>
+## 1                                84644.</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1">sample_means150 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb41-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="kw">max</span>(x_bar_price150) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(x_bar_price150))</a></code></pre></div>
 <pre><code>## # A tibble: 1 x 1
 ##   `max(x_bar_price150) - min(x_bar_price150)`
 ##                                         &lt;dbl&gt;
-## 1                                      41661.</code></pre>
+## 1                                      45842.</code></pre>
 <div id="license">
 <p>This is a derivative of an <a href="https://www.openintro.org/stat/labs.php">OpenIntro</a> lab, and is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">Attribution-NonCommercial-ShareAlike 3.0 United States</a> license.</p>
 </div>
@@ -558,7 +648,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

@@ -85,7 +85,7 @@ ames %>%
 ```
 ## # A tibble: 1 x 8
 ##      mu pop_med sigma pop_iqr pop_min pop_max pop_q1 pop_q3
-##   <dbl>   <dbl> <dbl>   <dbl>   <dbl>   <dbl>  <dbl>  <dbl>
+##   <dbl>   <dbl> <dbl>   <dbl>   <int>   <int>  <dbl>  <dbl>
 ## 1 1500.    1442  506.    617.     334    5642   1126  1743.
 ```
 
@@ -150,7 +150,7 @@ samp1 %>%
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   <dbl>
-## 1 1521.
+## 1 1608.
 ```
 
 Depending on which 50 homes you selected, your estimate could be a bit above 
@@ -178,7 +178,7 @@ ames %>%
 ## # A tibble: 1 x 1
 ##   x_bar
 ##   <dbl>
-## 1 1511.
+## 1 1519.
 ```
 
 Not surprisingly, every time we take another random sample, we get a different 
@@ -301,17 +301,17 @@ sample_means_small
 ## # A tibble: 25 x 2
 ##    replicate x_bar_practice
 ##        <int>          <dbl>
-##  1         1          1504.
-##  2         2          1257.
-##  3         3          1270.
-##  4         4          1753.
-##  5         5          1385.
-##  6         6          1342.
-##  7         7          1464.
-##  8         8          1218.
-##  9         9          1581.
+##  1         1          1778.
+##  2         2          1485.
+##  3         3          1520.
+##  4         4          1395.
+##  5         5          1594.
+##  6         6          1328.
+##  7         7          1782.
+##  8         8          1550.
+##  9         9          1328.
 ## 10        10          1514.
-## # ... with 15 more rows
+## # … with 15 more rows
 ```
 
 4. Which of the following is **true** about the elements in the sampling distributions you created?
@@ -348,7 +348,21 @@ sample size has on our sampling distribution.
 **Exercise**: Use the app below to create sampling distributions of means of `area`s from samples of size 10, 50, and 100. Use 5,000 simulations. What does each observation in the sampling distribution represent? How does the mean, standard error, and shape of the sampling distribution change as the sample size increases? How (if at all) do these values change if you increase the number of simulations?
 </div>
     
-<!--html_preserve--><div style="width: 100% ; height: 500px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div><!--/html_preserve-->
+
+```
+## 
+## Listening on http://127.0.0.1:7693
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+```
+## Warning: Removed 2 rows containing missing values (geom_bar).
+```
+
+<img src="01_sampling_distributions_Coursera_files/figure-html/shiny-1.png" width="672" />
 
 5. It makes intuitive sense that as the sample size increases, the center of the sampling distribution becomes a more reliable estimate for the true population mean. Also as the sample size increases, the variability of the sampling distribution ________. 
 <ol>
@@ -372,7 +386,7 @@ samp1 %>%
 ## # A tibble: 1 x 1
 ##   mu_price
 ##      <dbl>
-## 1  188123.
+## 1  197842.
 ```
 
 <div id="exercise">
@@ -431,7 +445,7 @@ samp1price %>%
 ## # A tibble: 1 x 1
 ##   `mean(price)`
 ##           <dbl>
-## 1        159350
+## 1       178137.
 ```
 
 <div id="exercise">
@@ -494,7 +508,7 @@ sample_means50 %>%
 ## # A tibble: 1 x 1
 ##   `max(x_bar_price) - min(x_bar_price)`
 ##                                   <dbl>
-## 1                                77479.
+## 1                                84644.
 ```
 
 ```r
@@ -506,7 +520,7 @@ sample_means150 %>%
 ## # A tibble: 1 x 1
 ##   `max(x_bar_price150) - min(x_bar_price150)`
 ##                                         <dbl>
-## 1                                      41661.
+## 1                                      45842.
 ```
 
 <div id="license">

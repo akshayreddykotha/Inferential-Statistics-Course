@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Week 4 | Inferential Statistics Course Activity</title>
-  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Week 4 | Inferential Statistics Course Activity" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="This is the course activity week-by-week for the inferential statistics course on coursera." />
   
 
-<meta name="author" content="Akshay Kotha">
+<meta name="author" content="Akshay Kotha" />
 
 
-<meta name="date" content="2018-12-30">
+<meta name="date" content="2019-09-25" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="week-3.html">
@@ -51,41 +50,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -174,18 +198,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1>Week 4</h1>
 <p>Week 4 is about making inference from categorical data.</p>
 <div id="instructions">
-<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera platform.</p>
+<p>Complete all <strong>Exercises</strong>, and submit answers to <strong>Questions</strong> on the Coursera
+platform.</p>
 </div>
 <p>In August of 2012, news outlets ranging from the <a href="http://www.washingtonpost.com/national/on-faith/poll-shows-atheism-on-the-rise-in-the-us/2012/08/13/90020fd6-e57d-11e1-9739-eef99c5fb285_story.html">Washington Post</a> to the <a href="http://www.huffingtonpost.com/2012/08/14/atheism-rise-religiosity-decline-in-america_n_1777031.html">Huffington Post</a> ran a story about the rise of atheism in America. The source for the story was a poll that asked people, “Irrespective of whether you attend a place of worship or not, would you say you are a religious person, not a religious person or a convinced atheist?” This type of question, which asks people to classify themselves in one way or another, is common in polling and generates categorical data. In this lab we take a look at the atheism survey and explore what’s at play when making inference about population proportions using categorical data.</p>
 <div id="getting-started-3" class="section level2">
 <h2><span class="header-section-number">0.12</span> Getting Started</h2>
 <div id="load-packages-3" class="section level3">
 <h3><span class="header-section-number">0.12.1</span> Load packages</h3>
-<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it using the <code>ggplot2</code> package for data visualization. The data can be found in the companion package for this course, <code>statsr</code>.</p>
+<p>In this lab we will explore the data using the <code>dplyr</code> package and visualize it
+using the <code>ggplot2</code> package for data visualization. The data can be found in the
+companion package for this course, <code>statsr</code>.</p>
 <p>Let’s load the packages.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(statsr)
-<span class="kw">library</span>(dplyr)
-<span class="kw">library</span>(ggplot2)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(statsr)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
 </div>
 <div id="the-survey" class="section level3">
 <h3><span class="header-section-number">0.12.2</span> The survey</h3>
@@ -245,7 +272,7 @@ False
 <div id="the-data-3" class="section level3">
 <h3><span class="header-section-number">0.12.3</span> The data</h3>
 <p>Turn your attention to Table 6 (pages 15 and 16), which reports the sample size and response percentages for all 57 countries. While this is a useful format to summarize the data, we will base our analysis on the original data set of individual responses to the survey. Load this data set into R with the following command.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(atheism)</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">data</span>(atheism)</a></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>What does each row of Table 6 correspond to?
 <ol>
@@ -259,6 +286,10 @@ Individual Persons
 Religions
 </li>
 </ol></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">sum</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</a></code></pre></div>
+<pre><code>## [1] 15</code></pre>
+<ol start="6" style="list-style-type: decimal">
 <li>What does each row of <code>atheism</code> correspond to?
 <ol>
 <li>
@@ -274,8 +305,8 @@ Religions
 </ol>
 <p>To investigate the link between these two ways of organizing this data, take a look at the estimated proportion of atheists in the United States. Towards the bottom of Table 6, we see that this is 5%. We should be able to come to the same number using the <code>atheism</code> data.</p>
 <p>Create a new dataframe called <code>us12</code> that contains only the rows in <code>atheism</code> associated with respondents to the 2012 survey from the United States:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">us12 &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span> , atheism<span class="op">$</span>year <span class="op">==</span><span class="st"> &quot;2012&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">us12 &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span> , atheism<span class="op">$</span>year <span class="op">==</span><span class="st"> &quot;2012&quot;</span>)</a></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>Next, calculate the proportion of atheist responses in the United States in 2012, i.e. in <code>us12</code>. True / False: This percentage agrees with the percentage in Table~6.
 <ol>
@@ -287,12 +318,12 @@ False
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 7 here, and Knit</span>
-us12 <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">group_by</span>(response) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="co"># Show percentage of each level within the categorical variable</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">perc =</span> n<span class="op">/</span><span class="kw">sum</span>(n)) </code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="co"># type your code for Question 7 here, and Knit</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">us12 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(response) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="st">  </span><span class="co"># Show percentage of each level within the categorical variable</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">perc =</span> n<span class="op">/</span><span class="kw">sum</span>(n)) </a></code></pre></div>
 <pre><code>## # A tibble: 2 x 3
 ##   response        n   perc
 ##   &lt;fct&gt;       &lt;int&gt;  &lt;dbl&gt;
@@ -308,7 +339,7 @@ us12 <span class="op">%&gt;%</span>
 <p><strong>Exercise</strong>: Write out the conditions for inference to construct a 95% confidence interval for the proportion of atheists in the United States in 2012. Are you confident all conditions are met?</p>
 </div>
 <p>If the conditions for inference are reasonable, we can either calculate the standard error and construct the interval by hand, or allow the <code>inference</code> function to do it for us.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us12, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ci&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us12, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ci&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</a></code></pre></div>
 <pre><code>## Single categorical variable, success: atheist
 ## n = 1002, p-hat = 0.0499
 ## 95% CI: (0.0364 , 0.0634)</code></pre>
@@ -335,29 +366,29 @@ The margin of error for the estimate of the proportion of atheists in the US in 
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 8 here, and Knit</span>
-n &lt;-<span class="st"> </span><span class="dv">1002</span>
-p_hat &lt;-<span class="st"> </span><span class="fl">0.0499</span>
-se &lt;-<span class="st"> </span><span class="kw">sqrt</span>(p_hat<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>(p_hat))<span class="op">/</span>n)
-moe &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)<span class="op">*</span>se
-moe</code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="co"># type your code for Question 8 here, and Knit</span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">n &lt;-<span class="st"> </span><span class="dv">1002</span></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3">p_hat &lt;-<span class="st"> </span><span class="fl">0.0499</span></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4">se &lt;-<span class="st"> </span><span class="kw">sqrt</span>(p_hat<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>(p_hat))<span class="op">/</span>n)</a>
+<a class="sourceLine" id="cb10-5" data-line-number="5">moe &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)<span class="op">*</span>se</a>
+<a class="sourceLine" id="cb10-6" data-line-number="6">moe</a></code></pre></div>
 <pre><code>## [1] 0.01348184</code></pre>
 <div id="exercise">
 <p><strong>Exercise</strong>: Using the inference function, calculate confidence intervals for the proportion of atheists in 2012 in two other countries of your choice, and report the associated margins of error. Be sure to note whether the conditions for inference are met. It may be helpful to create new data sets for each of the two countries first, and then use these data sets in the <code>inference</code> function to construct the confidence intervals.</p>
 </div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for the Exercise here, and Knit</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="co"># type your code for the Exercise here, and Knit</span></a></code></pre></div>
 </div>
 <div id="how-does-the-proportion-affect-the-margin-of-error" class="section level2">
 <h2><span class="header-section-number">0.14</span> How does the proportion affect the margin of error?</h2>
 <p>Imagine you’ve set out to survey 1000 people on two questions: are you female? and are you left-handed? Since both of these sample proportions were calculated from the same sample size, they should have the same margin of error, right? Wrong! While the margin of error does change with sample size, it is also affected by the proportion.</p>
 <p>Think back to the formula for the standard error: <span class="math inline">\(SE = \sqrt{p(1-p)/n}\)</span>. This is then used in the formula for the margin of error for a 95% confidence interval: <span class="math inline">\(ME = 1.96\times SE = 1.96\times\sqrt{p(1-p)/n}\)</span>. Since the population proportion <span class="math inline">\(p\)</span> is in this <span class="math inline">\(ME\)</span> formula, it should make sense that the margin of error is in some way dependent on the population proportion. We can visualize this relationship by creating a plot of <span class="math inline">\(ME\)</span> vs. <span class="math inline">\(p\)</span>.</p>
 <p>The first step is to make a vector <code>p</code> that is a sequence from <span class="math inline">\(0\)</span> to <span class="math inline">\(1\)</span> with each number separated by <span class="math inline">\(0.01\)</span>. We can then create a vector of the margin of error (<code>me</code>) associated with each of these values of <code>p</code> using the familiar approximate formula (<span class="math inline">\(ME = 1.96 \times SE\)</span>). Lastly, we plot the two vectors against each other to reveal their relationship.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>))
-n &lt;-<span class="st"> </span><span class="dv">1000</span>
-d &lt;-<span class="st"> </span>d <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">me =</span> <span class="fl">1.96</span><span class="op">*</span><span class="kw">sqrt</span>(p<span class="op">*</span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>p)<span class="op">/</span>n))
-<span class="kw">ggplot</span>(d, <span class="kw">aes</span>(<span class="dt">x =</span> p, <span class="dt">y =</span> me)) <span class="op">+</span>
-<span class="st">  </span><span class="kw">geom_line</span>()</code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>))</a>
+<a class="sourceLine" id="cb13-2" data-line-number="2">n &lt;-<span class="st"> </span><span class="dv">1000</span></a>
+<a class="sourceLine" id="cb13-3" data-line-number="3">d &lt;-<span class="st"> </span>d <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-4" data-line-number="4"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">me =</span> <span class="fl">1.96</span><span class="op">*</span><span class="kw">sqrt</span>(p<span class="op">*</span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>p)<span class="op">/</span>n))</a>
+<a class="sourceLine" id="cb13-5" data-line-number="5"><span class="kw">ggplot</span>(d, <span class="kw">aes</span>(<span class="dt">x =</span> p, <span class="dt">y =</span> me)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb13-6" data-line-number="6"><span class="st">  </span><span class="kw">geom_line</span>()</a></code></pre></div>
 <p><img src="04_inf_for_categorical_data_Coursera_files/figure-html/me-plot-1.png" width="672" /></p>
 <ol start="9" style="list-style-type: decimal">
 <li>Which of the following is false about the relationship between <span class="math inline">\(p\)</span> and <span class="math inline">\(ME\)</span>.
@@ -389,12 +420,12 @@ False
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 10 here, and Knit</span>
-spain &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;Spain&quot;</span>) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">group_by</span>(year)
-
-<span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">data =</span> spain, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span> )</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="co"># type your code for Question 10 here, and Knit</span></a>
+<a class="sourceLine" id="cb14-2" data-line-number="2">spain &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb14-3" data-line-number="3"><span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;Spain&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb14-4" data-line-number="4"><span class="st">  </span><span class="kw">group_by</span>(year)</a>
+<a class="sourceLine" id="cb14-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb14-6" data-line-number="6"><span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">data =</span> spain, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span> )</a></code></pre></div>
 <pre><code>## Response variable: categorical (2 levels, success: atheist)
 ## Explanatory variable: categorical (2 levels) 
 ## n_2005 = 1146, p_hat_2005 = 0.1003
@@ -415,11 +446,11 @@ False
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 11 here, and Knit</span>
-us &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span>)
-
-<span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span>, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="co"># type your code for Question 11 here, and Knit</span></a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">us &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb16-3" data-line-number="3"><span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span>)</a>
+<a class="sourceLine" id="cb16-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb16-5" data-line-number="5"><span class="kw">inference</span>(<span class="dt">y =</span> response, <span class="dt">data =</span> us, <span class="dt">x =</span> <span class="kw">as.factor</span>(year), <span class="dt">method =</span> <span class="st">&quot;theoretical&quot;</span>, <span class="dt">type =</span> <span class="st">&quot;ht&quot;</span>, <span class="dt">alternative =</span> <span class="st">&quot;twosided&quot;</span>, <span class="dt">null =</span> <span class="dv">0</span>, <span class="dt">statistic =</span> <span class="st">&quot;proportion&quot;</span>, <span class="dt">success =</span> <span class="st">&quot;atheist&quot;</span>)</a></code></pre></div>
 <pre><code>## Response variable: categorical (2 levels, success: atheist)
 ## Explanatory variable: categorical (2 levels) 
 ## n_2005 = 1002, p_hat_2005 = 0.01
@@ -446,12 +477,12 @@ us &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span>
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 12 here, and Knit</span>
-sig_level =<span class="st"> </span><span class="fl">0.05</span>
-nt4 =<span class="st"> </span><span class="dv">39</span>
-Type_1_error &lt;-<span class="st"> </span>sig_level <span class="op">*</span><span class="st"> </span>nt4
-
-Type_1_error</code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="co"># type your code for Question 12 here, and Knit</span></a>
+<a class="sourceLine" id="cb18-2" data-line-number="2">sig_level =<span class="st"> </span><span class="fl">0.05</span></a>
+<a class="sourceLine" id="cb18-3" data-line-number="3">nt4 =<span class="st"> </span><span class="dv">39</span></a>
+<a class="sourceLine" id="cb18-4" data-line-number="4">Type_<span class="dv">1</span>_error &lt;-<span class="st"> </span>sig_level <span class="op">*</span><span class="st"> </span>nt4</a>
+<a class="sourceLine" id="cb18-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb18-6" data-line-number="6">Type_<span class="dv">1</span>_error</a></code></pre></div>
 <pre><code>## [1] 1.95</code></pre>
 <ol start="13" style="list-style-type: decimal">
 <li>Suppose you’re hired by the local government to estimate the proportion of residents that attend a religious service on a weekly basis. According to the guidelines, the estimate must have a margin of error no greater than 1% with 95% confidence. You have no idea what to expect for <span class="math inline">\(p\)</span>. How many people would you have to sample to ensure that you are within the guidelines? <br><br> <em>Hint:</em> Refer to your plot of the relationship between <span class="math inline">\(p\)</span> and margin of error. Do not use the data set to answer this question.
@@ -470,16 +501,18 @@ At least 9604 people
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 13 here, and Knit</span>
-p &lt;-<span class="st"> </span><span class="fl">0.5</span>
-z_crit &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)
-n_sample &lt;-<span class="st"> </span>z_crit<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>p<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p)<span class="op">/</span><span class="fl">0.01</span><span class="op">^</span><span class="dv">2</span>
-n_sample</code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="co"># type your code for Question 13 here, and Knit</span></a>
+<a class="sourceLine" id="cb20-2" data-line-number="2">p &lt;-<span class="st"> </span><span class="fl">0.5</span></a>
+<a class="sourceLine" id="cb20-3" data-line-number="3">z_crit &lt;-<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.975</span>)</a>
+<a class="sourceLine" id="cb20-4" data-line-number="4">n_sample &lt;-<span class="st"> </span>z_crit<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>p<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p)<span class="op">/</span><span class="fl">0.01</span><span class="op">^</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb20-5" data-line-number="5">n_sample</a></code></pre></div>
 <pre><code>## [1] 9603.647</code></pre>
 <div id="license">
-<p>This is a product of OpenIntro that is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike 3.0 Unported</a>. This lab was written for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
+<p>This is a product of OpenIntro that is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons
+Attribution-ShareAlike 3.0 Unported</a>.
+This lab was written for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
 </div>
-<p>Lab activity answered by <a href="https:/twitter.com/AkshayKReddy">Akshay Kotha</a></p>
+<p>Lab activity answered by: <a href="https://linkedin.com/in/akshaykotha">Akshay Kotha</a></p>
 
 </div>
 </div>
@@ -539,7 +572,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

@@ -155,4 +155,6 @@ round(chisq_race_natrace$expected,2)
 
 Based on the high value of chi-square statistic and the degrees of freedom under consideration, we have a p-value which is very tiny compared to the 5% significance level. This implies there is a clear association/ relationship between the variables `race` and `natrace`. Further analysis can be carried out to find out if it is a positive correlation or a negative correlation. Hoping to learn that soon. The confidence interval calcualtion is not included as it not associated with chi-square testing and that is because chi-square distribution is always right skewed. New techniques have to be implemented to make the distribution normal and then CLT or confidence interval can be applied.
 
-Created by: [Akshay Kotha](https://twitter.com/akshaykreddy)
+Created by: [Akshay Kotha](https://linkedin.com/in/akshaykotha)
+
+

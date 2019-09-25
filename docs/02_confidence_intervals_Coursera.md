@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # Week 2 {-}
 
 Week 2 covers calculating confidence intervals. Below is the activity.
@@ -146,18 +151,23 @@ familiar with by now.
 Let's finally calculate the confidence interval:
 
 ```r
-samp %>%
+ci_table <- samp %>%
   summarise(lower = mean(area) - z_star_95 * (sd(area) / sqrt(n)),
             upper = mean(area) + z_star_95 * (sd(area) / sqrt(n)))
+```
+
+
+```r
+#typeof(ci_table)
+ci_table
 ```
 
 ```
 ## # A tibble: 1 x 2
 ##   lower upper
 ##   <dbl> <dbl>
-## 1 1403. 1631.
+## 1 1348. 1613.
 ```
-
 To recap: even though we don't know what the full population looks like, we're 95% 
 confident that the true average size of houses in Ames lies between the values *lower* 
 and *upper*. There are a few conditions that must be met for this interval to be valid.
@@ -192,14 +202,23 @@ params <- ames %>%
 ```
 
 <div id="exercise">
-**Exercise**: Does your confidence interval capture the true average size of houses in 
-Ames?
+**Exercise**: Does your confidence interval capture the true average size of houses in Ames?
 </div>
 
 ```r
 # type your code for the Exercise here, and Knit
-# Yes, the true mean is contained within the confidence interval.
+if(params < ci_table$upper & params > ci_table$lower){
+  print("The true mean is contained within the confidence interval calculated above.")
+}else {
+  print("The true mean is not contained!")
+}
 ```
+
+```
+## [1] "The true mean is contained within the confidence interval calculated above."
+```
+
+**Yes, the true mean is contained within the confidence interval.**
 
 4. What proportion of 95% confidence intervals would you expect to capture the true population mean?
 <ol>
@@ -375,7 +394,7 @@ head(ci.99)
 **Exercise**: What proportion of your confidence intervals include the true population mean? 
 Is this proportion exactly equal to the confidence level? If not, explain why.
 
-**Answer**: It is almost all of the CIs = 98% include the true population mean except 1 sample. The proportion is not exactly equal to the confidence level because the confidence interval only provides a plausible range within which the mean is captured. BY definition, we are 95% confident, but results might vary based on how the samples are randonly selected. This is an overestimation of the 95% CI sampling.
+**Answer**: It is almost all of the CIs = 98% include the true population mean except 1 sample. The proportion is not exactly equal to the confidence level because the confidence interval only provides a plausible range within which the mean is captured. BY definition, we are 95% confident, but results might vary based on how the samples are randomly selected. This is an overestimation of the 95% CI sampling.
 </div>
 
 
@@ -446,8 +465,7 @@ ggplot(data = ci_data_99, aes(x = ci_bounds_99, y = ci_id_99,
 ## 4         4 1375. 1723.          1549. yes          
 ## 5         5 1257. 1617.          1437. yes
 ```
-
-```
+  
 
 6. We would expect 99% of the intervals to contain the true population mean.
 <ol>
@@ -455,9 +473,14 @@ ggplot(data = ci_data_99, aes(x = ci_bounds_99, y = ci_id_99,
 <li> False </li>
 </ol>
 
+**True**.
 
 <div id="license">
 This is a product of OpenIntro that is released under a [Creative Commons 
 Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0).
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
+</div>
+
+<div>
+Questions answered and comments by [Akshay Kotha](https://linkedin.com/in/akshaykotha)
 </div>

@@ -1,7 +1,7 @@
 --- 
 title: "Inferential Statistics Course Activity"
 author: "Akshay Kotha"
-date: "2018-12-30"
+date: "2019-09-25"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book

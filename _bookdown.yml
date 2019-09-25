@@ -4,6 +4,7 @@ language:
     chapter_name: ""
 delete_merged_file: true
 output_dir: "docs"
+new_session: yes
 
 rmd_files: ["index.Rmd",
             "01_sampling_distributions_Coursera.Rmd",

@@ -4,7 +4,8 @@ Week 4 is about making inference from categorical data.
 
 ---
 title: "Inference for categorical data"
-output: statsr:::statswithr_lab
+output: html_document:
+    code_folding: hide
 ---
 
 <div id="instructions">
@@ -80,6 +81,16 @@ data(atheism)
 <li> Individual Persons </li> 
 <li> Religions </li>
 </ol>
+
+
+```r
+sum(1:5)
+```
+
+```
+## [1] 15
+```
+
 
 6. What does each row of `atheism` correspond to?
 <ol>
@@ -322,4 +333,4 @@ Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3
 This lab was written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel.
 </div>
 
-Lab activity answered by [Akshay Kotha](https:/twitter.com/AkshayKReddy)
+Lab activity answered by: [Akshay Kotha](https://linkedin.com/in/akshaykotha)
